@@ -10,7 +10,7 @@ execute unless score #victory victory matches 1..160 if score #victory Migger = 
 execute unless score #victory victory matches 1..160 if score #victory Migger = Black Migger run scoreboard players set #victory victory 1
 execute unless score #victory victory matches 1..160 if score #victory Migger = Lime Migger run scoreboard players set #victory victory 1
 execute unless score #victory victory matches 1..160 if score #victory Migger = Orange Migger run scoreboard players set #victory victory 1
-# execute as @a[team=lone] unless score #victory victory matches 1..160 if score #victory Migger = @s Migger run scoreboard players set #victory victory 1
+execute as @a[team=lone] unless score #victory victory matches 1..160 if score #victory Migger = @s Migger run scoreboard players set #victory victory 1
 
 execute if score #victory victory matches 1..160 run scoreboard players add #victory victory 1
 execute if score #victory victory matches 1..160 at @a[tag=alive] run particle minecraft:lava ~ ~ ~ 1 1 1 1 2
@@ -43,9 +43,9 @@ execute if score #victory victory matches 2 if score #victory Migger = Orange Mi
 execute if score #victory victory matches 2 if score #victory Migger = Orange Migger run title @a title {"text":"Orange Clownfishes","color":"gold","bold":true}
 execute if score #victory victory matches 2 if score #victory Migger = Orange Migger run title @a subtitle {"text":"Won the game!","color":"yellow"}
 
-# execute as @a[team=lone,tag=victory] if score #victory victory matches 2 if score #victory Migger = @s Migger run tellraw @a [{"color":"gray","selector":"@s","bold":true},{"text":" has won the game!","color":"yellow"}]
-# execute as @a[team=lone,tag=victory] if score #victory victory matches 2 if score #victory Migger = @s Migger run title @a title {"selector":"@s","color":"gray","bold":true}
-# execute as @a[team=lone,tag=victory] if score #victory victory matches 2 if score #victory Migger = @s Migger run title @a subtitle {"text":"Won the game!","color":"yellow"}
+execute as @a[team=lone,tag=victory] if score #victory victory matches 2 if score #victory Migger = @s Migger run tellraw @a [{"color":"gray","selector":"@s","bold":true},{"text":" has won the game!","color":"yellow"}]
+execute as @a[team=lone,tag=victory] if score #victory victory matches 2 if score #victory Migger = @s Migger run title @a title {"selector":"@s","color":"gray","bold":true}
+execute as @a[team=lone,tag=victory] if score #victory victory matches 2 if score #victory Migger = @s Migger run title @a subtitle {"text":"Won the game!","color":"yellow"}
 
 
 
@@ -89,10 +89,10 @@ execute if score #victory victory matches 25 if score #victory Migger = Orange M
 execute if score #victory victory matches 50 if score #victory Migger = Orange Migger at @a[tag=alive] run summon firework_rocket ~ ~ ~ {LifeTime:20,Motion:[0.0,0.5,0.0],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_twinkle:true,has_trail:true,colors:[I;16751624],fade_colors:[I;16740935]}]}}}}
 execute if score #victory victory matches 75 if score #victory Migger = Orange Migger at @a[tag=alive] run summon firework_rocket ~ ~ ~ {LifeTime:20,Motion:[0.0,0.5,0.0],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_twinkle:true,has_trail:true,colors:[I;16751624],fade_colors:[I;16740935]}]}}}}
 
-# execute as @a[team=lone,tag=victory] if score #victory victory matches 2 if score #victory Migger = @s Migger at @s run summon firework_rocket ~ ~ ~ {LifeTime:20,Motion:[0.0,0.5,0.0],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_twinkle:true,has_trail:true,colors:[I;2171169],fade_colors:[I;9211020]}]}}}}
-# execute as @a[team=lone,tag=victory] if score #victory victory matches 25 if score #victory Migger = @s Migger at @s run summon firework_rocket ~ ~ ~ {LifeTime:20,Motion:[0.0,0.5,0.0],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_twinkle:true,has_trail:true,colors:[I;2171169],fade_colors:[I;9211020]}]}}}}
-# execute as @a[team=lone,tag=victory] if score #victory victory matches 50 if score #victory Migger = @s Migger at @s run summon firework_rocket ~ ~ ~ {LifeTime:20,Motion:[0.0,0.5,0.0],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_twinkle:true,has_trail:true,colors:[I;2171169],fade_colors:[I;9211020]}]}}}}
-# execute as @a[team=lone,tag=victory] if score #victory victory matches 75 if score #victory Migger = @s Migger at @s run summon firework_rocket ~ ~ ~ {LifeTime:20,Motion:[0.0,0.5,0.0],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_twinkle:true,has_trail:true,colors:[I;2171169],fade_colors:[I;9211020]}]}}}}
+execute as @a[team=lone,tag=victory] if score #victory victory matches 2 if score #victory Migger = @s Migger at @s run summon firework_rocket ~ ~ ~ {LifeTime:20,Motion:[0.0,0.5,0.0],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_twinkle:true,has_trail:true,colors:[I;2171169],fade_colors:[I;9211020]}]}}}}
+execute as @a[team=lone,tag=victory] if score #victory victory matches 25 if score #victory Migger = @s Migger at @s run summon firework_rocket ~ ~ ~ {LifeTime:20,Motion:[0.0,0.5,0.0],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_twinkle:true,has_trail:true,colors:[I;2171169],fade_colors:[I;9211020]}]}}}}
+execute as @a[team=lone,tag=victory] if score #victory victory matches 50 if score #victory Migger = @s Migger at @s run summon firework_rocket ~ ~ ~ {LifeTime:20,Motion:[0.0,0.5,0.0],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_twinkle:true,has_trail:true,colors:[I;2171169],fade_colors:[I;9211020]}]}}}}
+execute as @a[team=lone,tag=victory] if score #victory victory matches 75 if score #victory Migger = @s Migger at @s run summon firework_rocket ~ ~ ~ {LifeTime:20,Motion:[0.0,0.5,0.0],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_twinkle:true,has_trail:true,colors:[I;2171169],fade_colors:[I;9211020]}]}}}}
 
 
 

@@ -1,11 +1,11 @@
 # function m:stage_0_init_lobby
 # scoreboard objectives add randomtpentities dummy
+function m:base/sidebar
 tag @e[tag=plainsrandomtp,limit=1] add this_rtp
 execute as @e[type=armor_stand,tag=plainsrandomtp,tag=!this_rtp] run kill @s
 tag @e[tag=this_rtp] remove this_rtp
 execute if score @e[tag=dummy,limit=1] world_stage matches 1 run function m:stage_1_lobby
 execute if score @e[tag=dummy,limit=1] world_stage matches 2 run function m:stage_2_game
-function m:base/sidebar
 function m:base/detectjoin
 function m:game/powerups
 execute as @a unless entity @s[nbt={active_effects:[{id:"minecraft:resistance",amplifier:-1b,duration:-1}]}] run effect give @s minecraft:resistance infinite 255 true

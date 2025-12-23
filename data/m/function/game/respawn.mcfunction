@@ -29,7 +29,6 @@ execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncool
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run title @s title ""
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run title @a subtitle ""
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run clear @s blaze_rod
-execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run function m:game/anti_drop_items
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run give @s arrow 5
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run attribute @s minecraft:scale base set 1
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run scoreboard players set @s player_hurt_level 0

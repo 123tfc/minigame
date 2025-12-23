@@ -11,3 +11,4 @@ function m:game/drops/blue/meteor_shower
 function m:game/drops/blue/motion_sickness
 function m:game/drops/blue/horsies
 function m:game/drops/blue/destroy_warp_anchor
+function m:game/drops/blue/gravitation_switch

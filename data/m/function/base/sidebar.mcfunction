@@ -67,4 +67,3 @@ execute as @a unless entity @s[team=lone] run scoreboard players reset @s knockb
 
 
 
-

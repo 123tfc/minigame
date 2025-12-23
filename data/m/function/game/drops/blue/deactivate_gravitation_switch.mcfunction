@@ -1,2 +1,0 @@
-execute at @a[nbt={attributes:[{base:-0.005d,id:"minecraft:gravity"}]}] run playsound minecraft:block.beacon.deactivate master @a ~ ~ ~ 1 2
-execute as @a run attribute @s minecraft:gravity base set 0.08

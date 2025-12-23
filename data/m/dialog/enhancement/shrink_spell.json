@@ -18,7 +18,7 @@
     },
     {
       "type": "minecraft:plain_message",
-      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with a Spell Of Shrinking will make you small, and thereby harder to hit."},{"color":"#f5a29d","text":"\n\n Notice: \n The Spell will wear off on death."}]
+      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with a Spell Of Shrinking will make you small, and thereby harder to hit."},{"color":"#f5a29d","text":"\n\n Notice: \n The Spell will wear off upon death."}]
     }
   ],
   "action": {
