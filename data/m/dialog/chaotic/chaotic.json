@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:multi_action",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body":[
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:verdant_froglight"
+      },
+      "height": 16
+    },
+    {
+      "type": "plain_message",
+      "contents":[{"text":"Chaotic Drops","underlined":true},{"text":"\n\nChaotic Drops are dropped only at specific Chaotic Drop locations.","underlined":false}]
+    }
+  ],
+  "actions":[
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/turtle_scute"},{"text":" Motion Sickness "},{"color":"white","atlas":"items","sprite":"item/turtle_scute"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:chaotic/motion_sickness"
+      }
+    },
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/lead"},{"text":" Horsies For All "},{"color":"white","atlas":"items","sprite":"item/lead"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:chaotic/horsies"
+      }
+    },
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/fire_charge"},{"text":" Meteor Shower "},{"color":"white","atlas":"items","sprite":"item/fire_charge"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:chaotic/meteor_shower"
+      }
+    },
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/netherite_upgrade_smithing_template"},{"text":" Gravitation Switch "},{"color":"white","atlas":"items","sprite":"item/netherite_upgrade_smithing_template"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:chaotic/gravitation_switch"
+      }
+    },
+    {
+      "label": [{"color":"white","atlas":"blocks","sprite":"block/obsidian"},{"text":" Warp Anchor "},{"color":"white","atlas":"blocks","sprite":"block/obsidian"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:chaotic/warp_anchor"
+      }
+    }
+  ],
+  "columns": 1,
+  "exit_action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:main"
+    }
+  }
+
+
+
+
+
+
+
+
+
+}

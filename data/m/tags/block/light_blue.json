@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:light_blue_terracotta",
+        "minecraft:light_blue_concrete",
+        "minecraft:blue_ice",
+        "minecraft:packed_ice"
+    ]
+}

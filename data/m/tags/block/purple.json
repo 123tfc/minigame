@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:blue_terracotta",
+        "minecraft:purple_concrete",
+        "minecraft:purple_wool",
+        "minecraft:amethyst_block"
+    ]
+}

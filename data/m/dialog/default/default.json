@@ -1,0 +1,80 @@
+{
+  "type": "minecraft:multi_action",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body":[
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:stick"
+      },
+      "height": 16
+    },
+    {
+      "type": "plain_message",
+      "contents":[{"text":"Default Drops","underlined":true},{"text":"\n\nDefault Drops are dropped randomly around the maps.","underlined":false}]
+    }
+  ],
+  "actions":[
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/feather"},{"text":" Speed Powerup "},{"color":"white","atlas":"items","sprite":"item/feather"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:default/speed_powerup"
+      }
+    },
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/rabbit_foot"},{"color":"white","bold":false,"text":" Jump Powerup "},{"color":"white","atlas":"items","sprite":"item/rabbit_foot"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:default/jump_powerup"
+      }
+    },
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/iron_sword"},{"color":"white","bold":false,"text":" Strength Powerup "},{"color":"white","atlas":"items","sprite":"item/iron_sword"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:default/strength_powerup"
+      }
+    },
+    {
+      "label": [{"color":"white","atlas":"blocks","sprite":"block/glass"},{"color":"white","bold":false,"text":" Invisibility Powerup "},{"color":"white","atlas":"blocks","sprite":"block/glass"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:default/invisibility_powerup"
+      }
+    },
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/mangrove_propagule"},{"color":"white","bold":false,"text":" Resurface "},{"color":"white","atlas":"items","sprite":"item/mangrove_propagule"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:default/resurface"
+      }
+    },
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/nether_star"},{"color":"white","bold":false,"text":" Heavy Star "},{"color":"white","atlas":"items","sprite":"item/nether_star"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:default/heavy_star"
+      }
+    }
+    
+    
+  ],
+  "columns": 1,
+  "exit_action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:main"
+    }
+  }
+
+
+
+
+
+
+
+
+
+}

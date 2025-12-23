@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "used_book": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "m:guidebook"
+      }
+    }
+  },
+    "rewards": {
+      "function": "m:lobby/show_guidebook"
+    }
+  }

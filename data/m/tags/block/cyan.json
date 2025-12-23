@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:warped_planks",
+        "minecraft:cyan_concrete",
+        "minecraft:cyan_wool",
+        "minecraft:stripped_warped_hyphae"
+    ]
+}

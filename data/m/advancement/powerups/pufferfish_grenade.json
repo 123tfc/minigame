@@ -1,0 +1,22 @@
+{
+    "criteria": {
+      "pufferfish": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:pufferfish",
+            "components": {
+              "minecraft:food": {
+                "nutrition": 0,
+                "saturation": 0,
+                "can_always_eat": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "m:game/drops/yellow/used_pufferfish_grenade"
+    }
+  }

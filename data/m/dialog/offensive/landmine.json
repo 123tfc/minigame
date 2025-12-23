@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:notice",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:open_eyeblossom"
+      },
+      "height": 16
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {"text":"Explosive Landmine","color":"gray","bold": true,"underlined": true}
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Explosive Landmine will place it under the player. After 2 seconds the landmine will become active. When the landmine is active it may blow up if an entity steps on it. After 60s it will automatically detonate by itself."},{"color":"#f5a29d","text":"\n\n Notice: \n Attempting to use it whenever you're not on the ground will result in failure, but you may keep the item."}]
+    }
+  ],
+  "action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:offensive/offensive"
+    }
+  }
+}

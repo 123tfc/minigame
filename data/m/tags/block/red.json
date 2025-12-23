@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:nether_wart_block",
+        "minecraft:red_concrete",
+        "minecraft:red_wool",
+        "minecraft:red_glazed_terracotta"
+    ]
+}

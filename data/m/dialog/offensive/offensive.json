@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:multi_action",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body":[
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:ochre_froglight"
+      },
+      "height": 16
+    },
+    {
+      "type": "plain_message",
+      "contents":[{"text":"Offensive Drops","underlined":true},{"text":"\n\nOffensive Drops are dropped only at specific Offensive Drop locations.","underlined":false}]
+    }
+  ],
+  "actions":[
+    {
+      "label": [{"color":"white","atlas":"blocks","sprite":"block/spawner"},{"text":" Mob Grenade "},{"color":"white","atlas":"blocks","sprite":"block/spawner"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:offensive/mob_grenade"
+      }
+    },
+    {
+      "label": [{"color":"white","atlas":"blocks","sprite":"block/dropper_front_vertical"},{"text":" Smoke Bomb "},{"color":"white","atlas":"blocks","sprite":"block/dropper_front_vertical"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:offensive/smoke_bomb"
+      }
+    },
+    {
+      "label": [{"color":"white","atlas":"blocks","sprite":"block/open_eyeblossom"},{"text":" Explosive Landmine "},{"color":"white","atlas":"blocks","sprite":"block/open_eyeblossom"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:offensive/landmine"
+      }
+    },
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/pufferfish"},{"text":" Pufferfish Grenade "},{"color":"white","atlas":"items","sprite":"item/pufferfish"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:offensive/pufferfish_grenade"
+      }
+    }
+  ],
+  "columns": 1,
+  "exit_action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:main"
+    }
+  }
+
+
+
+
+
+
+
+
+
+}

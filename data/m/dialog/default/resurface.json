@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:notice",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:mangrove_propagule",
+          "components": {
+          "minecraft:enchantment_glint_override": true
+        }
+      },
+      "height": 16
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {"text": "Resurface","color": "#22CC55","bold": true,"underlined": true}
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with Resurface in your hand, you will get teleported on top of the highest block available directly above or below you."},{"color":"#f5a29d","text":"\n\n Notice: \n Attempting to use it when nothing is above or below you will result in failure, but you may keep the item."}]
+    }
+  ],
+  "action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:default/default"
+    }
+  }
+}

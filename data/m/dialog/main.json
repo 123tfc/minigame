@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:multi_action",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "external_title": [{"color":"#ffffff","atlas":"items","sprite":"item/knowledge_book"},{"text":" KnockBlock","bold":true,"color":"#55ee88"}],
+  "body":[
+    {
+      "type": "plain_message",
+      "contents":[{"text":"Welcome To KnockBlock!","underlined":true},{"text":"\n\n In this Guidebook you will find all necessary information about KnockBlock!","underlined":false}]
+    }
+  ],
+  "actions":[
+    {
+        "label": [{"color":"white","atlas":"items","sprite":"item/stick"},{"text":" Default Drops"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:default/default"
+      }
+    },
+    {
+        "label": [{"color":"white","atlas":"blocks","sprite":"block/ochre_froglight_side"},{"text":" Offensive Drops"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:offensive/offensive"
+      }
+    },
+    {
+        "label": [{"color":"white","atlas":"blocks","sprite":"block/verdant_froglight_side"},{"text":" Chaotic Drops"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:chaotic/chaotic"
+      }
+    },
+    {
+        "label": [{"color":"white","atlas":"blocks","sprite":"block/pearlescent_froglight_side"},{"text":" Enhancement Drops"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:enhancement/enhancement"
+      }
+    }
+  ],
+  "columns": 1,
+  "exit_action": {
+    "label": "Done"
+  }
+
+
+
+
+
+
+
+
+
+}

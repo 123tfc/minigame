@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:lime_terracotta",
+        "minecraft:waxed_weathered_copper",
+        "minecraft:lime_concrete",
+        "minecraft:lime_wool"
+    ]
+}

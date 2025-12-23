@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:notice",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:dragon_egg"
+      },
+      "height": 16
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {"text":"Warp Anchor","color":"dark_purple","bold": true,"underlined": true}
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Warp Anchor places it where you stand, at the same time you will get a Teleport To Warp:"}]
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:ender_eye"
+      },
+      "height": 5
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Teleport To Warp teleports you to a random Warp Anchor placed on the map. This means that you won't necessarily teleport to the one you placed yourself!\n\n The warp anchor can be demolished by any player by sneaking inside of it for 3s."},{"color":"#f5a29d","text":"\n\n Notice: \n Attempting to place it whenever you're not on the ground will result in failure, but you may keep the item.\n\nAttempting to use the Teleport To Warp with no Warp Anchors present on the map will result in failure and you will lose it!"}]
+    }
+  ],
+  "action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:chaotic/chaotic"
+    }
+  }
+}

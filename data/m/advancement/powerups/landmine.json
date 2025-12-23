@@ -1,0 +1,22 @@
+{
+    "criteria": {
+      "open_eyeblossom": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:open_eyeblossom",
+            "components": {
+              "minecraft:food": {
+                "nutrition": 0,
+                "saturation": 0,
+                "can_always_eat": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "m:game/drops/yellow/used_landmine"
+    }
+  }

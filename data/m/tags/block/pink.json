@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:pink_terracotta",
+        "minecraft:pink_concrete",
+        "minecraft:pink_wool",
+        "minecraft:pink_glazed_terracotta"
+    ]
+}

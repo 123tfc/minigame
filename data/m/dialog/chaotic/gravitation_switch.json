@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:notice",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:netherite_upgrade_smithing_template",
+          "components": {
+          "minecraft:enchantment_glint_override": true
+        }
+      },
+      "height": 16
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {"text":"Gravitation Switch","color":"#EE8855","bold": true,"underlined": true}
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Gravitation Switch will flip the gravity for 10s."}]
+    }
+  ],
+  "action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:chaotic/chaotic"
+    }
+  }
+}

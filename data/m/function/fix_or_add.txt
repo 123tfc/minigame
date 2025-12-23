@@ -1,0 +1,50 @@
+Item:
+
+
+Grenat: modstandere -> store midlertidigt
+Grenat: Skubber folk væk fra der hvor de står/Wind charge??
+
+Klone sig selv med en mannequin:
+    data modify entity @n[type=mannequin] profile.id set from entity @s UUID
+
+Spyd med knockback men low dura
+
+SLOW MOTION!! tick rate -> lav
+
+LONE WOLFS! (Enkeltmands hold)
+
+-------------
+
+Fix:
+
+MAN STARTER IKKE PÅ 0 KNOCKBACK!!! muligvis fixet
+
+
+
+Spawnprotection efter tp????? muligvis fixet
+
+Tid på Shrink Spell
+
+
+
+
+123DIPPER:
+
+Lav midtdrop svære tilgængelig, muligvis tilføj forhindringer eller et hul
+
+Lav dynamit der kan lave et hul på mappet, men ikke på drops
+
+Warp anchor nerf, 1½ minut max, 30 sek cooldown skal kunne smadre, men det skal tage et par slag.
+
+Man burde ikke kunne få flere liv end man spawnede med
+
+Lidt mere fokus på værre rewards i starten, og bedre drops til sidst
+
+
+
+
+
+
+FIXED:
+Pufferfish Poison kortere tid + Fjern effects når du dør
+Warp anchor -> gør så man kan smadre 

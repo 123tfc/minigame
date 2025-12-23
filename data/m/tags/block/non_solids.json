@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "#minecraft:air",
+        "#minecraft:flowers",
+        "#minecraft:replaceable",
+        "#minecraft:rails"
+    ]
+}

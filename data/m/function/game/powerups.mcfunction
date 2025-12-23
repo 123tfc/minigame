@@ -1,0 +1,13 @@
+function m:game/drops/elytradrop
+function m:game/drops/heavy_star
+function m:game/drops/pink/extra_life
+function m:game/drops/pink/infinity_bow
+function m:game/drops/pink/fire_stick
+function m:game/drops/yellow/pufferfish_grenade
+function m:game/drops/yellow/detect_landmine
+function m:game/drops/yellow/detect_smoke_bomb
+function m:game/drops/yellow/detect_mob_grenade
+function m:game/drops/blue/meteor_shower
+function m:game/drops/blue/motion_sickness
+function m:game/drops/blue/horsies
+function m:game/drops/blue/destroy_warp_anchor

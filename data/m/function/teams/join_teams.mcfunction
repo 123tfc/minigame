@@ -1,0 +1,30 @@
+
+
+execute at @e[type=minecraft:armor_stand,name="Red Parrots"] positioned ~ ~.5 ~ as @a if entity @s[distance=..1] run team join red @s
+execute as @a if entity @s[team=red] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run item replace entity @s armor.head with minecraft:player_head[custom_name={"text":"Red Parrot","italic":false},profile={id:[I;341842743,-280346611,-1877537658,315143733],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzczMWI5YjQ4ZjA2ZTAxMzA0NGU3YTJlODFlYTVlOWIwNDQ0YWViYWE5ODM1ZjRkZjk4MTFiYzM1N2NkZjAyZCJ9fX0="}]},enchantments={"binding_curse":1}]
+
+execute at @e[type=minecraft:armor_stand,name="White Chicks"] positioned ~ ~.5 ~ as @a if entity @s[distance=..1] run team join white @s
+execute as @a if entity @s[team=white] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run item replace entity @s armor.head with minecraft:player_head[custom_name={"text":"White Chick","italic":false},profile={id:[I;278017624,1782204923,-1370627840,-174910017],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjRmZDhiNjY5MDc1OGQ1OWMzNWJiOWNkNWFkZTgwNjljMjVkZWI3OTYyZTM1NWRiYWY0NDJlYTA0NWJjNzI5NCJ9fX0="}]},enchantments={"binding_curse":1}] 
+
+execute at @e[type=minecraft:armor_stand,name="Yellow Ocelots"] positioned ~ ~.5 ~ as @a if entity @s[distance=..1] run team join yellow @s
+execute as @a if entity @s[team=yellow] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run item replace entity @s armor.head with minecraft:player_head[custom_name={"text":"Yellow Ocelot","italic":false},profile={id:[I;361973269,-650950678,-1947638254,462688350],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTFmMDdlM2YyZTVmMjU2YmZhZGU2NjZhOGRlMWI1ZDMwMjUyYzk1ZTk4ZjhhOGVjYzZlM2M3YjdmNjcwOTUifX19"}]},enchantments={"binding_curse":1}]
+
+execute at @e[type=minecraft:armor_stand,name="Blue Axolotls"] positioned ~ ~.5 ~ as @a if entity @s[distance=..1] run team join blue @s
+execute as @a if entity @s[team=blue] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run item replace entity @s armor.head with minecraft:player_head[custom_name={"text":"Blue Axolotl","italic":false},profile={id:[I;1463381360,234113634,-1304171415,775592567],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTFjMDU0OGExNmZhZmEzODE1ZWEyMzYyNWI2MjcxZTdiZDUyYjMzYzJmZTA2ZjI1MzU2YWVkZTIzZGExNTZmZSJ9fX0="}]},enchantments={"binding_curse":1}]
+
+
+
+execute at @e[type=minecraft:armor_stand,name="Pink Pigs"] positioned ~ ~.5 ~ as @a if entity @s[distance=..1] run team join pink @s
+execute as @a if entity @s[team=pink] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run item replace entity @s armor.head with minecraft:player_head[custom_name={"text":"Pink Pig","italic":false},profile={id:[I;-636295096,-2143729842,-2054518008,1153435002],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTRiOGE1ZWEwNDYyOWZiMGNiNWQxNjk0ODUyMDVlOTY0NTc3NjdhZmEyOWYzYjQwZTBkYTRjNWJjOTZiNTViYiJ9fX0="}]},enchantments={"binding_curse":1}]
+
+execute at @e[type=minecraft:armor_stand,name="Black Spiders"] positioned ~ ~.5 ~ as @a if entity @s[distance=..1] run team join black @s
+execute as @a if entity @s[team=black] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run item replace entity @s armor.head with minecraft:player_head[custom_name={"text":"Black Spider","italic":false},profile={id:[I;-1892045815,-1776794905,-1081900783,-277767235],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQ2ZDdjMTgwNmUyNDlmN2JkNjZmODVlYTRlMThjZjcxY2MwMDYyOWUwOGI1MzUwYTBiYTVjMDZmYWRmOTJkYSJ9fX0="}]},enchantments={"binding_curse":1}]
+
+execute at @e[type=minecraft:armor_stand,name="Lime Slimes"] positioned ~ ~.5 ~ as @a if entity @s[distance=..1] run team join lime @s
+execute as @a if entity @s[team=lime] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run item replace entity @s armor.head with minecraft:player_head[custom_name={"text":"Lime Slime","italic":false},profile={id:[I;1295673596,607994957,-1725454046,716578263],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWQ1Yjk0ODA0ZTY0ODUxZjRlOWM0OGNlZDNjMTk3NWRmMzViOTU4ZDU3MGRmN2E5ZmI5NGJmMzExNDM3YzkxYiJ9fX0="}]},enchantments={"binding_curse":1}]
+
+execute at @e[type=minecraft:armor_stand,name="Orange Clownfish"] positioned ~ ~.5 ~ as @a if entity @s[distance=..1] run team join orange @s
+execute as @a if entity @s[team=orange] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run item replace entity @s armor.head with minecraft:player_head[custom_name={"text":"Orange Clownfish","italic":false},profile={id:[I;494884307,-1353105178,-1864006777,1838919220],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI1MTBiMzAxYjA4ODYzOGVjNWM4NzQ3ZTJkNzU0NDE4Y2I3NDdhNWNlNzAyMmM5YzcxMmVjYmRjNWY2ZjA2NSJ9fX0="}]},enchantments={"binding_curse":1}]
+
+execute at @e[type=minecraft:armor_stand,name="Lone Wolfs"] positioned ~ ~.5 ~ as @a if entity @s[distance=..1] run team join lone @s
+execute as @a if entity @s[team=lone] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run item replace entity @s armor.head with minecraft:player_head[custom_name={"text":"Orange Clownfish","italic":false},profile={properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmYxNmM1ODFlZjJmNTY2NmM3NTk3Njg1MDZiY2E0MTA2NDAzYWQ4MDM1YjVjNmU0MzFhYTZiNjIzYmQ2YzRkNyJ9fX0="}]},enchantments={"binding_curse":1}]

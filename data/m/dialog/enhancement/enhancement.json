@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:multi_action",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body":[
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:pearlescent_froglight"
+      },
+      "height": 16
+    },
+    {
+      "type": "plain_message",
+      "contents":[{"text":"Enhancement Drops","underlined":true},{"text":"\n\nEnhancement Drops are dropped only at one specific Enhancement Drop location on each map.","underlined":false}]
+    }
+  ],
+  "actions":[
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/blaze_powder"},{"text":" Fire Stick Enchant "},{"color":"white","atlas":"items","sprite":"item/blaze_powder"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:enhancement/fire_stick"
+      }
+    },
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/enchanted_book"},{"text":" Infinity Bow Enchant "},{"color":"white","atlas":"items","sprite":"item/enchanted_book"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:enhancement/infinity_bow"
+      }
+    },
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/guster_banner_pattern"},{"text":" Spell Of Shrinking "},{"color":"white","atlas":"items","sprite":"item/guster_banner_pattern"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:enhancement/shrink_spell"
+      }
+    },
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/end_crystal"},{"text":" Extra Life "},{"color":"white","atlas":"items","sprite":"item/end_crystal"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:enhancement/extra_life"
+      }
+    }
+  ],
+  "columns": 1,
+  "exit_action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:main"
+    }
+  }
+
+
+
+
+
+
+
+
+
+}

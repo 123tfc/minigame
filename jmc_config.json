@@ -1,0 +1,7 @@
+{
+    "namespace": "m",
+    "description": "mapdatapack",
+    "pack_format": "18",
+    "target": "main.jmc",
+    "output": "."
+}

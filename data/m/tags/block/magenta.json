@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:magenta_terracotta",
+        "minecraft:magenta_concrete",
+        "minecraft:magenta_wool",
+        "minecraft:magenta_glazed_terracotta"
+    ]
+}

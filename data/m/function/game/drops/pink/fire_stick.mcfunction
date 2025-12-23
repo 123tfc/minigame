@@ -1,0 +1,8 @@
+# summon item ~ ~ ~ {Item:{id:"blaze_powder",components:{"custom_name":'{"text":"Fire Stick Enchant","color":"#FFAA55","italic":false}',"max_stack_size":1}},CustomName:'{"text":"Fire Stick Enchant","color":"#FFAA55","italic":false}',CustomNameVisible:1b}
+
+execute as @a[nbt={Inventory:[{id:"minecraft:blaze_powder",components:{"minecraft:custom_name":{"text":"Fire Stick Enchant","color":"#FFAA55","italic":false}}}]}] run clear @s stick 1
+execute as @a[nbt={Inventory:[{id:"minecraft:blaze_powder",components:{"minecraft:custom_name":{"text":"Fire Stick Enchant","color":"#FFAA55","italic":false}}}]}] run clear @s blaze_rod 1
+execute if score @e[limit=1,tag=dummy] MapSwitch matches 1 as @a[nbt={Inventory:[{id:"minecraft:blaze_powder",components:{"minecraft:custom_name":{"text":"Fire Stick Enchant","color":"#FFAA55","italic":false}}}]}] run give @s blaze_rod[minecraft:max_stack_size=1,enchantments={"knockback":15,"fire_aspect":1},custom_name={"text":"Burning Knockback Stick","color":"#FFAA55","italic":false}]
+execute if score @e[limit=1,tag=dummy] MapSwitch matches 2 as @a[nbt={Inventory:[{id:"minecraft:blaze_powder",components:{"minecraft:custom_name":{"text":"Fire Stick Enchant","color":"#FFAA55","italic":false}}}]}] run give @s blaze_rod[minecraft:max_stack_size=1,enchantments={"knockback":10,"fire_aspect":1},custom_name={"text":"Burning Knockback Stick","color":"#FFAA55","italic":false}]
+
+clear @a minecraft:blaze_powder[minecraft:custom_name={"text":"Fire Stick Enchant","color":"#FFAA55","italic":false}]

@@ -1,0 +1,22 @@
+{
+    "criteria": {
+      "lead": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:lead",
+            "components": {
+              "minecraft:food": {
+                "nutrition": 0,
+                "saturation": 0,
+                "can_always_eat": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "m:game/drops/blue/used_horsies"
+    }
+  }

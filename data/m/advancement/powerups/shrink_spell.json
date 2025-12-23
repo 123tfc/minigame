@@ -1,0 +1,22 @@
+{
+    "criteria": {
+      "guster_banner_pattern": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:guster_banner_pattern",
+            "components": {
+              "minecraft:food": {
+                "nutrition": 0,
+                "saturation": 0,
+                "can_always_eat": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "m:game/drops/pink/used_shrink_spell"
+    }
+  }

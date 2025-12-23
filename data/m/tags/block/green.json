@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:green_terracotta",
+        "minecraft:moss_block",
+        "minecraft:melon",
+        "minecraft:bamboo_block"
+    ]
+}
