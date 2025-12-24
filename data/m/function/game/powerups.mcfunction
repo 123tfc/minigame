@@ -6,6 +6,7 @@ function m:game/drops/pink/fire_stick
 function m:game/drops/yellow/pufferfish_grenade
 function m:game/drops/yellow/detect_landmine
 function m:game/drops/yellow/detect_smoke_bomb
+function m:game/drops/yellow/detect_growth_bomb
 function m:game/drops/yellow/detect_mob_grenade
 function m:game/drops/blue/meteor_shower
 function m:game/drops/blue/motion_sickness

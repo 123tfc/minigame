@@ -42,6 +42,13 @@
         "type": "show_dialog",
         "dialog": "m:offensive/pufferfish_grenade"
       }
+    },
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/bone_meal"},{"text":" Growth Bomb "},{"color":"white","atlas":"items","sprite":"item/bone_meal"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:offensive/growth_bomb"
+      }
     }
   ],
   "columns": 1,

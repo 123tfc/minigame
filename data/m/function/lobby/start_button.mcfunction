@@ -38,9 +38,7 @@ execute if score @e[tag=dummy,limit=1] start_button matches 110 as @e[tag=start_
 execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a run clear @s
 execute if score @e[tag=dummy,limit=1] start_button matches 110 run gamemode adventure
 execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a run function m:game/baseitems
-execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a run scoreboard players set @e[tag=dummy] world_stage 2
-execute if score @e[tag=dummy,limit=1] start_button matches 109 as @a run scoreboard players set @s player_hurt_level 0
-execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a run scoreboard players set @s respawncooldown 100
+execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a run scoreboard players set @s respawncooldown 99
 
 execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 1 as @a run forceload add -245 -833 -161 -751
 execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 1 as @a run tp @s -197.50 164.00 -786.50 facing -197.50 163.00 -786.50
@@ -66,3 +64,4 @@ execute if entity @e[tag=cancelled] run title @a title {"text":"Canceled","bold"
 execute if entity @e[tag=cancelled] run title @a subtitle {"text":"Not Enough Teams To Start The Game","color":"#FF0000"}
 execute if entity @e[tag=cancelled] run tag @e[tag=dummy] remove cancelled
 
+execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a run scoreboard players set @e[tag=dummy] world_stage 2

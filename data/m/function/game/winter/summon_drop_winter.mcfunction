@@ -15,4 +15,4 @@ execute as @e[tag=temp_drop_item] store result entity @s Pos[0] double 1 run ran
 execute as @e[tag=temp_drop_item] store result entity @s Pos[2] double 1 run random value -856..-744
 execute as @e[tag=temp_drop_item] run data modify entity @s Tags set value [drop_item]
 
-execute if score @e[tag=dummy,limit=1] world_stage matches 2 run schedule function m:game/plains/summon_drop_plains 5s
+execute if score @e[tag=dummy,limit=1] world_stage matches 2 run schedule function m:game/plains/summon_drop_winter 5s
