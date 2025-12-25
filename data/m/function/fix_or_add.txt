@@ -1,7 +1,7 @@
 Item:
 
 
-Grenat: modstandere -> store midlertidigt
+
 Grenat: Skubber folk væk fra der hvor de står/Wind charge??
 
 Klone sig selv med en mannequin:
@@ -11,7 +11,7 @@ Spyd med knockback men low dura
 
 SLOW MOTION!! tick rate -> lav
 
-LONE WOLFS! (Enkeltmands hold)
+
 
 -------------
 
@@ -48,3 +48,5 @@ Lidt mere fokus på værre rewards i starten, og bedre drops til sidst
 FIXED:
 Pufferfish Poison kortere tid + Fjern effects når du dør
 Warp anchor -> gør så man kan smadre 
+LONE WOLFS! (Enkeltmands hold)
+Grenat: modstandere -> store midlertidigt

@@ -5,24 +5,27 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:heavy_core"
+        "id": "minecraft:fire_charge",
+          "components": {
+          "minecraft:enchantment_glint_override": true
+        }
       },
       "height": 16
     },
     {
       "type": "minecraft:plain_message",
-      "contents": {"text":"Smoke Bomb","color":"dark_gray","bold": true,"underlined": true}
+      "contents": {"text":"Meteor Shower","color":"#cc4422","bold": true,"underlined": true}
     },
     {
       "type": "minecraft:plain_message",
-      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Smoke Bomb will throw it. Whenever the bomb hits a block it will explode into smoke and nearby players will get blinded."}]
+      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Meteor Shower will surprisingly start a meteor shower that lasts 30s"}]
     }
   ],
   "action": {
     "label": "Done",
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "m:offensive/offensive"
+      "dialog": "m:blue/blue"
     }
   }
 }

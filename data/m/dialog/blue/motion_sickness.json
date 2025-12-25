@@ -5,7 +5,7 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:netherite_upgrade_smithing_template",
+        "id": "minecraft:turtle_scute",
           "components": {
           "minecraft:enchantment_glint_override": true
         }
@@ -14,18 +14,18 @@
     },
     {
       "type": "minecraft:plain_message",
-      "contents": {"text":"Gravitation Switch","color":"#EE8855","bold": true,"underlined": true}
+      "contents": {"text":"Motion Sickness Pill","color":"#44FFCC","bold": true,"underlined": true}
     },
     {
       "type": "minecraft:plain_message",
-      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Gravitation Switch will flip the gravity for 10s."}]
+      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Motion Sickness Pill will make all players motion sick!\n\n Motion Sickness makes all players nauseous and blinded if the don't sneak."}]
     }
   ],
   "action": {
     "label": "Done",
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "m:chaotic/chaotic"
+      "dialog": "m:blue/blue"
     }
   }
 }

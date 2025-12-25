@@ -5,7 +5,7 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:blaze_powder",
+        "id": "minecraft:pufferfish",
           "components": {
           "minecraft:enchantment_glint_override": true
         }
@@ -14,18 +14,18 @@
     },
     {
       "type": "minecraft:plain_message",
-      "contents": {"text":"Fire Stick Enchant","color":"#ffaa55","bold": true,"underlined": true}
+      "contents": {"text":"Pufferfish Grenade","color":"#55ee88","bold": true,"underlined": true}
     },
     {
       "type": "minecraft:plain_message",
-      "contents": [{"color":"white","text": "Picking up the Fire Stick Enchant sets fire to your stick and makes it set targets on fire when hitting them."},{"color":"#f5a29d","text":"\n\n Notice: \n The Fire Stick is lost upon death."}]
+      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Pufferfish Grenade will throw it. Whenever the pufferfish hits a block or player it will summon a cloud of poison."}]
     }
   ],
   "action": {
     "label": "Done",
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "m:enhancement/enhancement"
+      "dialog": "m:yellow/yellow"
     }
   }
 }

@@ -22,7 +22,7 @@
     "label": "Done",
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "m:offensive/offensive"
+      "dialog": "m:yellow/yellow"
     }
   }
 }

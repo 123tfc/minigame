@@ -22,7 +22,7 @@
         "width": 150,
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "m:offensive/offensive"
+        "dialog": "m:yellow/yellow"
       }
     },
     {
@@ -30,7 +30,7 @@
         "width": 150,
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "m:chaotic/chaotic"
+        "dialog": "m:blue/blue"
       }
     },
     {
@@ -38,7 +38,7 @@
         "width": 150,
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "m:enhancement/enhancement"
+        "dialog": "m:pink/pink"
       }
     }
   ],

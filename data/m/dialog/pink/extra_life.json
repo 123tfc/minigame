@@ -5,7 +5,7 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:guster_banner_pattern",
+        "id": "minecraft:end_crystal",
           "components": {
           "minecraft:enchantment_glint_override": true
         }
@@ -14,18 +14,18 @@
     },
     {
       "type": "minecraft:plain_message",
-      "contents": {"text":"Spell of Shrinking","color":"#EEAAFF","bold": true,"underlined": true}
+      "contents": {"text":"Extra Life","color":"#FF4477","bold": true,"underlined": true}
     },
     {
       "type": "minecraft:plain_message",
-      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with a Spell Of Shrinking will make you small, and thereby harder to hit."},{"color":"#f5a29d","text":"\n\n Notice: \n The Spell will wear off upon death."}]
+      "contents": [{"color":"white","text": "Picking up an Extra Life grants you one more heart!"},{"color":"#f5a29d","text":"\n\n Notice: \n You cannot exceed the starting amount of lives."}]
     }
   ],
   "action": {
     "label": "Done",
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "m:enhancement/enhancement"
+      "dialog": "m:pink/pink"
     }
   }
 }

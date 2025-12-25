@@ -5,27 +5,24 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:fire_charge",
-          "components": {
-          "minecraft:enchantment_glint_override": true
-        }
+        "id": "minecraft:spawner"
       },
       "height": 16
     },
     {
       "type": "minecraft:plain_message",
-      "contents": {"text":"Meteor Shower","color":"#cc4422","bold": true,"underlined": true}
+      "contents": {"text":"Mob Grenade","color":"dark_purple","bold": true,"underlined": true}
     },
     {
       "type": "minecraft:plain_message",
-      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Meteor Shower will surprisingly start a meteor shower that lasts 30s"}]
+      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Mob Grenade will throw it. Whenever the grenade hits a block it will summon some kind of mob."}]
     }
   ],
   "action": {
     "label": "Done",
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "m:chaotic/chaotic"
+      "dialog": "m:yellow/yellow"
     }
   }
 }

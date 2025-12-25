@@ -33,7 +33,7 @@
     "label": "Done",
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "m:chaotic/chaotic"
+      "dialog": "m:blue/blue"
     }
   }
 }

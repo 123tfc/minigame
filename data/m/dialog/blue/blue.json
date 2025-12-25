@@ -19,35 +19,35 @@
       "label": [{"color":"white","atlas":"items","sprite":"item/turtle_scute"},{"text":" Motion Sickness "},{"color":"white","atlas":"items","sprite":"item/turtle_scute"}],
       "action":{
         "type": "show_dialog",
-        "dialog": "m:chaotic/motion_sickness"
+        "dialog": "m:blue/motion_sickness"
       }
     },
     {
       "label": [{"color":"white","atlas":"items","sprite":"item/lead"},{"text":" Horsies For All "},{"color":"white","atlas":"items","sprite":"item/lead"}],
       "action":{
         "type": "show_dialog",
-        "dialog": "m:chaotic/horsies"
+        "dialog": "m:blue/horsies"
       }
     },
     {
       "label": [{"color":"white","atlas":"items","sprite":"item/fire_charge"},{"text":" Meteor Shower "},{"color":"white","atlas":"items","sprite":"item/fire_charge"}],
       "action":{
         "type": "show_dialog",
-        "dialog": "m:chaotic/meteor_shower"
+        "dialog": "m:blue/meteor_shower"
       }
     },
     {
       "label": [{"color":"white","atlas":"items","sprite":"item/netherite_upgrade_smithing_template"},{"text":" Gravitation Switch "},{"color":"white","atlas":"items","sprite":"item/netherite_upgrade_smithing_template"}],
       "action":{
         "type": "show_dialog",
-        "dialog": "m:chaotic/gravitation_switch"
+        "dialog": "m:blue/gravitation_switch"
       }
     },
     {
       "label": [{"color":"white","atlas":"blocks","sprite":"block/obsidian"},{"text":" Warp Anchor "},{"color":"white","atlas":"blocks","sprite":"block/obsidian"}],
       "action":{
         "type": "show_dialog",
-        "dialog": "m:chaotic/warp_anchor"
+        "dialog": "m:blue/warp_anchor"
       }
     }
   ],

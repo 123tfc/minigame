@@ -13,3 +13,4 @@ function m:game/drops/blue/motion_sickness
 function m:game/drops/blue/horsies
 function m:game/drops/blue/destroy_warp_anchor
 function m:game/drops/blue/gravitation_switch
+function m:game/drops/blue/slow_time

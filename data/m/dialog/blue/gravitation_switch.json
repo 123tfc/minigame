@@ -5,7 +5,7 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:enchanted_book",
+        "id": "minecraft:netherite_upgrade_smithing_template",
           "components": {
           "minecraft:enchantment_glint_override": true
         }
@@ -14,18 +14,18 @@
     },
     {
       "type": "minecraft:plain_message",
-      "contents": {"text":"Infinity Bow Enchant","color":"light_purple","bold": true,"underlined": true}
+      "contents": {"text":"Gravitation Switch","color":"#EE8855","bold": true,"underlined": true}
     },
     {
       "type": "minecraft:plain_message",
-      "contents": [{"color":"white","text": "Picking up the Infinity Bow Enchant makes your bow be able to shoot infinite arrows."}]
+      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Gravitation Switch will flip the gravity for 10s."}]
     }
   ],
   "action": {
     "label": "Done",
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "m:enhancement/enhancement"
+      "dialog": "m:blue/blue"
     }
   }
 }

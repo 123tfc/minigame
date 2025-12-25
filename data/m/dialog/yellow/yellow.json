@@ -19,35 +19,35 @@
       "label": [{"color":"white","atlas":"blocks","sprite":"block/spawner"},{"text":" Mob Grenade "},{"color":"white","atlas":"blocks","sprite":"block/spawner"}],
       "action":{
         "type": "show_dialog",
-        "dialog": "m:offensive/mob_grenade"
+        "dialog": "m:yellow/mob_grenade"
       }
     },
     {
       "label": [{"color":"white","atlas":"blocks","sprite":"block/dropper_front_vertical"},{"text":" Smoke Bomb "},{"color":"white","atlas":"blocks","sprite":"block/dropper_front_vertical"}],
       "action":{
         "type": "show_dialog",
-        "dialog": "m:offensive/smoke_bomb"
+        "dialog": "m:yellow/smoke_bomb"
       }
     },
     {
       "label": [{"color":"white","atlas":"blocks","sprite":"block/open_eyeblossom"},{"text":" Explosive Landmine "},{"color":"white","atlas":"blocks","sprite":"block/open_eyeblossom"}],
       "action":{
         "type": "show_dialog",
-        "dialog": "m:offensive/landmine"
+        "dialog": "m:yellow/landmine"
       }
     },
     {
       "label": [{"color":"white","atlas":"items","sprite":"item/pufferfish"},{"text":" Pufferfish Grenade "},{"color":"white","atlas":"items","sprite":"item/pufferfish"}],
       "action":{
         "type": "show_dialog",
-        "dialog": "m:offensive/pufferfish_grenade"
+        "dialog": "m:yellow/pufferfish_grenade"
       }
     },
     {
       "label": [{"color":"white","atlas":"items","sprite":"item/bone_meal"},{"text":" Growth Bomb "},{"color":"white","atlas":"items","sprite":"item/bone_meal"}],
       "action":{
         "type": "show_dialog",
-        "dialog": "m:offensive/growth_bomb"
+        "dialog": "m:yellow/growth_bomb"
       }
     }
   ],

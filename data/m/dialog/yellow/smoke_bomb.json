@@ -5,24 +5,24 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:spawner"
+        "id": "minecraft:heavy_core"
       },
       "height": 16
     },
     {
       "type": "minecraft:plain_message",
-      "contents": {"text":"Mob Grenade","color":"dark_purple","bold": true,"underlined": true}
+      "contents": {"text":"Smoke Bomb","color":"dark_gray","bold": true,"underlined": true}
     },
     {
       "type": "minecraft:plain_message",
-      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Mob Grenade will throw it. Whenever the grenade hits a block it will summon some kind of mob."}]
+      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Smoke Bomb will throw it. Whenever the bomb hits a block it will explode into smoke and nearby players will get blinded."}]
     }
   ],
   "action": {
     "label": "Done",
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "m:offensive/offensive"
+      "dialog": "m:yellow/yellow"
     }
   }
 }
