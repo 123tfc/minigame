@@ -43,7 +43,7 @@ execute if score #victory victory matches 2 if score #victory Migger = Orange Mi
 execute if score #victory victory matches 2 if score #victory Migger = Orange Migger run title @a title {"text":"Orange Clownfishes","color":"gold","bold":true}
 execute if score #victory victory matches 2 if score #victory Migger = Orange Migger run title @a subtitle {"text":"Won the game!","color":"yellow"}
 
-execute as @a[team=lone,tag=victory] if score #victory victory matches 2 if score #victory Migger = @s Migger run tellraw @a [{"color":"gray","selector":"@s","bold":true},{"text":" has won the game!","color":"yellow"}]
+execute as @a[team=lone,tag=victory] if score #victory victory matches 2 if score #victory Migger = @s Migger run tellraw @a [{"color":"gray","selector":"@s","bold":true},{"text":" has won the game!","color":"yellow","bold":false}]
 execute as @a[team=lone,tag=victory] if score #victory victory matches 2 if score #victory Migger = @s Migger run title @a title {"selector":"@s","color":"gray","bold":true}
 execute as @a[team=lone,tag=victory] if score #victory victory matches 2 if score #victory Migger = @s Migger run title @a subtitle {"text":"Won the game!","color":"yellow"}
 

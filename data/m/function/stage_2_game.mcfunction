@@ -9,6 +9,5 @@ function m:base/sneaking
 function m:game/drops/elytradrop
 function m:base/player_hurt
 function m:base/knockback
-function m:game/victory
 kill @e[type=arrow,nbt={inGround:1b}]
 execute unless entity @e[tag=alive] run function m:stage_0_init_lobby

@@ -58,7 +58,7 @@ execute as @a unless entity @s[team=lone] run scoreboard players reset @s knockb
 
 
 
-
+execute if score @e[tag=dummy,limit=1] world_stage matches 2 run function m:game/victory
 
 
 
