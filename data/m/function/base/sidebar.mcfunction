@@ -53,8 +53,6 @@ execute unless entity @a[tag=alive,team=lime] run scoreboard players reset Lime 
 execute unless entity @a[tag=alive,team=orange] run scoreboard players reset Orange knockblock
 execute as @a[team=lone] unless entity @s[tag=alive] run scoreboard players reset @s knockblock
 execute as @a unless entity @s[team=lone] run scoreboard players reset @s knockblock
-# execute unless entity @a[tag=alive,team=lone] run scoreboard players reset @s knockblock
-# execute as @a unless entity @s[team=lone] run scoreboard players reset @s knockblock
 
 
 

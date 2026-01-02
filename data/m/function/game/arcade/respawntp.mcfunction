@@ -6,7 +6,7 @@ execute as @e[tag=arcaderandomtp] at @s positioned over world_surface run tp ~ ~
 execute as @e[tag=arcaderandomtp] unless entity @s[x=3207,dx=45,z=-808,dz=37,y=102] run function m:game/arcade/respawntp
 execute as @e[tag=arcaderandomtp] if entity @s[x=3207,dx=45,z=-808,dz=37,y=102] at @s run tp @a[gamemode=spectator,scores={respawncooldown=101},limit=1,sort=random] @s
 execute as @e[tag=arcaderandomtp] at @s as @a[gamemode=spectator,distance=..1] if entity @s run gamemode adventure @s
-execute as @e[tag=arcaderandomtp] at @s as @a[gamemode=spectator,distance=..1] if entity @s run scoreboard players set @s player_hurt_level 0
+
 execute as @e[tag=arcaderandomtp] run kill @s
 
 

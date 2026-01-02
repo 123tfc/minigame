@@ -6,7 +6,7 @@ execute as @e[tag=plainsrandomtp] at @s positioned over world_surface run tp ~ ~
 execute as @e[tag=plainsrandomtp] unless entity @s[x=-272,dx=138,z=-859,dz=138,y=104,dy=10] run function m:game/plains/respawntp
 execute as @e[tag=plainsrandomtp] if entity @s[x=-272,dx=138,z=-859,dz=138,y=104,dy=10] at @s run tp @a[gamemode=spectator,scores={respawncooldown=101},limit=1,sort=random] @s
 execute as @e[tag=plainsrandomtp] at @s as @a[gamemode=spectator,distance=..1] if entity @s run gamemode adventure @s
-execute as @e[tag=plainsrandomtp] at @s as @a[gamemode=spectator,distance=..1] if entity @s run scoreboard players set @s player_hurt_level 0
+
 execute as @e[tag=plainsrandomtp] run kill @s
 # -272 104 -859 
 

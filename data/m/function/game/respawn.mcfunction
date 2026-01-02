@@ -47,7 +47,8 @@ execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncool
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run clear @s knowledge_book
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run give @s arrow 5
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run attribute @s minecraft:scale base set 1
-execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run scoreboard players set @s player_hurt_level 0
+execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run scoreboard players set * player_hurt_level 0
+execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run scoreboard players set #division10 player_hurt_level 10
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run scoreboard players set @s hit_uuid 0
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run effect give @a minecraft:instant_health 1 10 true
 execute as @a[tag=alive,gamemode=spectator] if score @s respawncooldown matches 101 if score @e[tag=dummy,limit=1] MapSwitch matches 1 run function m:game/plains/respawntp
