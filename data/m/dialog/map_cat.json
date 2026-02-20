@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:multi_action",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "external_title": [{"color":"#ffffff","atlas":"items","sprite":"item/knowledge_book"},{"text":" KnockBlock","bold":true,"color":"#55ee88"}],
+  "body":[
+    {
+      "type": "plain_message",
+      "contents":[{"text":"The Drop Catalogue","underlined":true},{"text":"\n\n Here you can find Information about all the different Drops in the game!","underlined":false}]
+    }
+  ],
+  "actions":[
+    {
+        "label": [{"color":"white","atlas":"blocks","sprite":"block/grass_block_side"},{"text":"           Plains           "},{"color":"white","atlas":"blocks","sprite":"block/grass_block_side"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:default/default"
+      }
+    },
+    {
+        "label": [{"color":"white","atlas":"blocks","sprite":"block/grass_block_snow"},{"text":"           Winter           "},{"color":"white","atlas":"blocks","sprite":"block/grass_block_snow"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:yellow/yellow"
+      }
+    },
+    {
+        "label": [{"color":"white","atlas":"blocks","sprite":"block/netherrack"},{"text":"          Nether          "},{"color":"white","atlas":"blocks","sprite":"block/netherrack"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:blue/blue"
+      }
+    },
+    {
+        "label": [{"color":"white","atlas":"items","sprite":"item/dark_oak_door"},{"text":"            City            "},{"color":"white","atlas":"items","sprite":"item/dark_oak_door"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:pink/pink"
+      }
+    },
+    {
+        "label": [{"color":"white","atlas":"blocks","sprite":"block/test_block_accept"},{"text":"          Arcade          "},{"color":"white","atlas":"blocks","sprite":"block/test_block_fail"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:pink/pink"
+      }
+    }
+  ],
+  "columns": 1,
+  "exit_action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:main"
+    }
+  }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+

@@ -49,6 +49,13 @@
         "type": "show_dialog",
         "dialog": "m:yellow/growth_bomb"
       }
+    },
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/wooden_spear"},{"text":" Knockback Spear "},{"color":"white","atlas":"items","sprite":"item/wooden_spear"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:yellow/spear"
+      }
     }
   ],
   "columns": 1,
@@ -56,7 +63,7 @@
     "label": "Done",
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "m:main"
+      "dialog": "m:drop_cat"
     }
   }
 

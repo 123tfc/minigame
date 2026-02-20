@@ -20,7 +20,7 @@ execute as @s[tag=valid] at @s align xz run summon block_display ~ ~-0.4 ~ {Tags
 
 execute as @e[tag=landmine] unless score @s landmine_timer matches 0.. run scoreboard players set @s landmine_timer 0
 
-execute if entity @s[tag=valid,nbt={Inventory:[{Slot: -106b, id: "minecraft:open_eyeblossom", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:open_eyeblossom",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
+execute if entity @s[tag=valid,nbt={equipment:{offhand:{id: "minecraft:open_eyeblossom", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}}] unless entity @s[nbt={SelectedItem:{id:"minecraft:open_eyeblossom",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
 execute if entity @s[tag=valid,nbt={SelectedItem:{id:"minecraft:open_eyeblossom",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.mainhand with air
 
 

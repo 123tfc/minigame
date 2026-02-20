@@ -11,7 +11,7 @@ execute unless entity @s[tag=resurface_me] run title @s actionbar {"text":"You a
 execute unless entity @s[tag=resurface_me] run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 1 1
 
 execute if entity @s[tag=resurface_me] positioned over world_surface run tp ~ ~ ~
-execute if entity @s[tag=resurface_me,nbt={Inventory:[{Slot: -106b, id: "minecraft:mangrove_propagule", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}]}] unless entity @s[tag=resurface_me,nbt={SelectedItem:{id:"minecraft:mangrove_propagule",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
+execute if entity @s[tag=resurface_me,nbt={equipment:{offhand:{id: "minecraft:mangrove_propagule", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}}] unless entity @s[tag=resurface_me,nbt={SelectedItem:{id:"minecraft:mangrove_propagule",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
 execute if entity @s[tag=resurface_me,nbt={SelectedItem:{id:"minecraft:mangrove_propagule",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.mainhand with air
 execute if entity @s[tag=resurface_me] positioned over world_surface run playsound minecraft:entity.player.teleport master @a ~ ~ ~ 1 0.7
 tag @s remove resurface_me

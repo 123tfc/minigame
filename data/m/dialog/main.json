@@ -10,23 +10,7 @@
   ],
   "actions":[
     {
-        "label": [{"color":"white","atlas":"items","sprite":"item/stick"},{"text":" Default Drops"}],
-        "width": 150,
-      "action": {
-        "type": "minecraft:show_dialog",
-        "dialog": "m:default/default"
-      }
-    },
-    {
-        "label": [{"color":"white","atlas":"blocks","sprite":"block/ochre_froglight_side"},{"text":" Offensive Drops"}],
-        "width": 150,
-      "action": {
-        "type": "minecraft:show_dialog",
-        "dialog": "m:yellow/yellow"
-      }
-    },
-    {
-        "label": [{"color":"white","atlas":"blocks","sprite":"block/verdant_froglight_side"},{"text":" Chaotic Drops"}],
+        "label": [{"color":"white","atlas":"items","sprite":"item/writable_book"},{"text":"        Gameplay        "},{"color":"white","atlas":"items","sprite":"item/writable_book"}],
         "width": 150,
       "action": {
         "type": "minecraft:show_dialog",
@@ -34,11 +18,27 @@
       }
     },
     {
-        "label": [{"color":"white","atlas":"blocks","sprite":"block/pearlescent_froglight_side"},{"text":" Enhancement Drops"}],
+        "label": [{"color":"white","atlas":"blocks","sprite":"block/pearlescent_froglight_side"},{"text":"     Drop Catalogue     "},{"color":"white","atlas":"blocks","sprite":"block/pearlescent_froglight_side"}],
         "width": 150,
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "m:pink/pink"
+        "dialog": "m:drop_cat"
+      }
+    },
+    {
+        "label": [{"color":"white","atlas":"blocks","sprite":"block/grass_block_side"},{"text":"     Map Catalogue     "},{"color":"white","atlas":"blocks","sprite":"block/netherrack"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:map_cat"
+      }
+    },
+    {
+        "label": [{"color":"white","atlas":"blocks","sprite":"block/bricks"},{"text":"          Credits          "},{"color":"white","atlas":"blocks","sprite":"block/repeating_command_block_side"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:credits"
       }
     }
   ],

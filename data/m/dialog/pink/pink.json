@@ -37,6 +37,13 @@
       }
     },
     {
+      "label": [{"color":"white","atlas":"blocks","sprite":"block/piston_side"},{"text":" Extended Arms "},{"color":"white","atlas":"blocks","sprite":"block/piston_side"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:pink/extended_arms"
+      }
+    },
+    {
       "label": [{"color":"white","atlas":"items","sprite":"item/end_crystal"},{"text":" Extra Life "},{"color":"white","atlas":"items","sprite":"item/end_crystal"}],
       "action":{
         "type": "show_dialog",
@@ -49,7 +56,7 @@
     "label": "Done",
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "m:main"
+      "dialog": "m:drop_cat"
     }
   }
 

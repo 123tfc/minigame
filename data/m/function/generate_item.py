@@ -135,7 +135,7 @@ if r_click == "y":
             f.write('playsound minecraft:entity.drowned.shoot master @a ~ ~ ~ 1 0.5\n')
         if throw == "n":
             f.write('#Add Playsound Effect Here\n')
-        f.write('execute if entity @s[nbt={Inventory:[{Slot: -106b, id: "minecraft:' + item + '", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:' + item + '",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air\n')
+        f.write('execute if entity @s[nbt={equipment:{offhand:{id: "minecraft:' + item + '", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:' + item + '",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air\n')
         f.write('execute if entity @s[nbt={SelectedItem:{id:"minecraft:' + item + '",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.mainhand with air\n')
     
     

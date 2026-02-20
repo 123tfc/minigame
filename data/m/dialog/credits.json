@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:multi_action",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile":{
+            "name":"123TFC"
+          }
+        }
+      },
+      "height": 16
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {"text":"KnockBlock v1.0","color":"#55ee88","bold": true,"underlined": true},
+        {"text":"\n\n\nDesigned, Built & Coded by","color":"yellow","bold": false,"underlined": false},
+        {"text":"\n\n123TFC","color":"white","bold": false,"underlined": false},
+        {"text":"\n\n\nAssistance in Building","color":"yellow","bold": false,"underlined": false},
+        {"text":"\n\nseb4000a","color":"white","bold": false,"underlined": false},
+
+        {"text":"\n\n\nPlaytesting","color":"yellow","bold": false,"underlined": false},
+        {"text":"\n\nseb4000a","color":"white","bold": false,"underlined": false},
+        {"text":"\niiNilo","color":"white","bold": false,"underlined": false},
+        {"text":"\n123dipper","color":"white","bold": false,"underlined": false},
+        {"text":"\nWahl_DK","color":"white","bold": false,"underlined": false}
+      ]
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {"text":"\nCreator's Note","color":"yellow","bold": false,"underlined": false},  
+        {"color":"white","text": "\n\nI made KnockBlock because I wanted to create a fun knockout-style minigame in Minecraft.\n\nAt the same time, I challenged myself to make it both well coded and well built, since too many maps focus on only one of those.\n\nThis map aims for both, and I hope you can feel that — and most importantly, have fun playing it with your friends!\n"}
+      ]
+    }
+  ],
+  "actions": [
+    {
+        "label": [{"color":"white","player":{"name":"123TFC"}},{"text":"  Support me on Patreon!  ","color":"#ffb152"}],
+        "width": 200,
+      "action": {
+        "type": "minecraft:open_url",
+        "url": "https://patreon.com/123TFC?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"
+      }
+    }
+  ],
+  "columns": 2,
+  "exit_action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:drop_cat"
+    }
+  }
+}

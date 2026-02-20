@@ -15,5 +15,5 @@ execute as @a[gamemode=!spectator] at @s run ride @s mount @n[tag=horsie]
 scoreboard players set @e[tag=dummy] horsies 0
 
 
-execute if entity @s[nbt={Inventory:[{Slot: -106b, id: "minecraft:lead", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:lead",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
+execute if entity @s[nbt={equipment:{offhand:{id: "minecraft:lead", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}}] unless entity @s[nbt={SelectedItem:{id:"minecraft:lead",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:lead",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.mainhand with air

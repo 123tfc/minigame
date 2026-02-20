@@ -11,5 +11,5 @@ tag @s add motion_resistant
 scoreboard players set @e[tag=dummy] motion_sickness 0
 
 
-execute if entity @s[nbt={Inventory:[{Slot: -106b, id: "minecraft:turtle_scute", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:turtle_scute",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
+execute if entity @s[nbt={equipment:{offhand:{id: "minecraft:turtle_scute", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}}] unless entity @s[nbt={SelectedItem:{id:"minecraft:turtle_scute",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:turtle_scute",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.mainhand with air

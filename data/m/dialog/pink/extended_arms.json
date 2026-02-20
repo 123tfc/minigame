@@ -1,0 +1,31 @@
+{
+"type": "minecraft:notice",
+"title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+"body": [
+    {
+    "type": "minecraft:item",
+    "item": {
+        "id": "minecraft:piston",
+        "components": {
+        "minecraft:enchantment_glint_override": true
+        }
+    },
+    "height": 16
+    },
+    {
+    "type": "minecraft:plain_message",
+    "contents": {"text":"Extended Arms","color":"#ff9d5c","bold": true,"underlined": true}
+    },
+    {
+    "type": "minecraft:plain_message",
+    "contents": [{"color":"white","text": "Picking up the Extended Arms grants you further reach in the next 30s."}]
+    }
+],
+"action": {
+    "label": "Done",
+    "action": {
+    "type": "minecraft:show_dialog",
+    "dialog": "m:pink/pink"
+    }
+}
+}

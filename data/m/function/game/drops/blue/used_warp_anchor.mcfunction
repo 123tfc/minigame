@@ -15,7 +15,7 @@ execute as @s at @s if entity @s[nbt={OnGround:0b}] run title @s actionbar {"tex
 execute as @s at @s if block ~ ~-0.1 ~ #m:non_solids run title @s actionbar {"text":"Invalid Placement. Need Ground To Establish","color":"#FF0000"}
 
 
-execute at @s unless block ~ ~-1 ~ #m:non_solids if entity @s[nbt={OnGround:1b,Inventory:[{Slot: -106b, id: "minecraft:dragon_egg", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}]}] unless entity @s[nbt={OnGround:1b,SelectedItem:{id:"minecraft:dragon_egg",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
+execute at @s unless block ~ ~-1 ~ #m:non_solids if entity @s[nbt={OnGround:1b,equipment:{offhand:{id: "minecraft:dragon_egg", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}}] unless entity @s[nbt={OnGround:1b,SelectedItem:{id:"minecraft:dragon_egg",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
 execute at @s unless block ~ ~-1 ~ #m:non_solids if entity @s[nbt={OnGround:1b,SelectedItem:{id:"minecraft:dragon_egg",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.mainhand with air
 
 execute as @s at @s unless block ~ ~-1 ~ #m:non_solids if entity @s[nbt={OnGround:1b}] run give @s minecraft:ender_eye[minecraft:custom_name={"text":"Teleport To Warp", color:"dark_purple",italic:false},minecraft:max_stack_size=1]

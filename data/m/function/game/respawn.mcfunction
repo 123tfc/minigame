@@ -22,8 +22,10 @@ execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncool
 execute as @a[tag=victory,tag=alive,gamemode=adventure] if score @s respawncooldown matches 1 run scoreboard players add @s respawncooldown 1
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 2 if score @e[tag=dummy,limit=1] MapSwitch matches 1 run tp @s -197.50 164.00 -786.50 facing -197.50 163.00 -786.50
 execute as @a[tag=victory,tag=alive,gamemode=adventure] if score @s respawncooldown matches 2 if score @e[tag=dummy,limit=1] MapSwitch matches 1 run tp @s -197.50 164.00 -786.50 facing -197.50 163.00 -786.50
-execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 2 if score @e[tag=dummy,limit=1] MapSwitch matches 2 run tp @s 938 140 -797 facing 938 139 -797
-execute as @a[tag=victory,tag=alive,gamemode=adventure] if score @s respawncooldown matches 2 if score @e[tag=dummy,limit=1] MapSwitch matches 2 run tp @s 938 140 -797 facing 938 139 -797
+execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 2 if score @e[tag=dummy,limit=1] MapSwitch matches 2 run tp @s 944.5 140 -801.5 facing 944.5 139 -801.5
+execute as @a[tag=victory,tag=alive,gamemode=adventure] if score @s respawncooldown matches 2 if score @e[tag=dummy,limit=1] MapSwitch matches 2 run tp @s 944.5 140 -801.5 facing 944.5 139 -801.5
+execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 2 if score @e[tag=dummy,limit=1] MapSwitch matches 3 run tp @s 4372.5 150 -803.5 facing 4372.5 149 -803.5
+execute as @a[tag=victory,tag=alive,gamemode=adventure] if score @s respawncooldown matches 2 if score @e[tag=dummy,limit=1] MapSwitch matches 3 run tp @s 4372.5 150 -803.5 facing 4372.5 149 -803.5
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 2 if score @s health matches 2 run tag @s add dead
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 2 if score @s health matches 2 run tag @s remove alive
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 2 if score @s health matches 4 run attribute @s minecraft:max_health base set 2
@@ -47,12 +49,13 @@ execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncool
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run clear @s knowledge_book
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run give @s arrow 5
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run attribute @s minecraft:scale base set 1
-execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run scoreboard players set * player_hurt_level 0
+execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run scoreboard players set @s player_hurt_level 0
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run scoreboard players set #division10 player_hurt_level 10
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run scoreboard players set @s hit_uuid 0
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run effect give @a minecraft:instant_health 1 10 true
-execute as @a[tag=alive,gamemode=spectator] if score @s respawncooldown matches 101 if score @e[tag=dummy,limit=1] MapSwitch matches 1 run function m:game/plains/respawntp
-execute as @a[tag=alive,gamemode=spectator] if score @s respawncooldown matches 101 if score @e[tag=dummy,limit=1] MapSwitch matches 2 run function m:game/winter/respawntp
+execute as @a[tag=alive,gamemode=spectator] if score @s respawncooldown matches 101 if score @e[tag=dummy,limit=1] MapSwitch matches 1 run function m:game/macros/respawntp_macro {x1:"-272",x2:"-134",dx:"138",z1:"-859",z2:"-721",dz:"138",y:"104",dy:"10"}
+execute as @a[tag=alive,gamemode=spectator] if score @s respawncooldown matches 101 if score @e[tag=dummy,limit=1] MapSwitch matches 2 run function m:game/macros/respawntp_macro {x1:"874",x2:"1002",dx:"125",z1:"-856",z2:"-744",dz:"116",y:"102",dy:"4"}
+execute as @a[tag=alive,gamemode=spectator] if score @s respawncooldown matches 101 if score @e[tag=dummy,limit=1] MapSwitch matches 3 run function m:game/macros/respawntp_macro {x1:"4347",x2:"4441",dx:"94",z1:"-814",z2:"-721",dz:"93",y:"99",dy:"10"}
 execute as @a[tag=!victory,tag=alive,gamemode=adventure] if score @s respawncooldown matches 101 run scoreboard players reset @s respawncooldown
 execute as @a[tag=victory,tag=alive,gamemode=adventure] if score @s respawncooldown matches 2 run scoreboard players reset @s respawncooldown
 
@@ -60,6 +63,7 @@ execute as @a[tag=victory,tag=alive,gamemode=adventure] if score @s respawncoold
 
 execute as @a[tag=dead] run gamemode spectator
 
-execute if score @e[tag=dummy,limit=1] MapSwitch matches 1 as @a[gamemode=spectator] unless entity @s[x=-323,dx=240,z=-910,dz=240,y=0,dy=300] run tp @s -197.50 164.00 -786.50 facing -197.50 163.00 -786.50
-execute if score @e[tag=dummy,limit=1] MapSwitch matches 2 as @a[gamemode=spectator] unless entity @s[x=824,dx=225,y=0,dy=300,z=-906,dz=216] run tp @s 938 140 -797 facing 938 139 -797
+execute if score @e[tag=dummy,limit=1] MapSwitch matches 1 as @a[gamemode=spectator] unless entity @s[x=-323,dx=241,z=-910,dz=240,y=0,dy=241] run tp @s -197.50 164.00 -786.50 facing -197.50 163.00 -786.50
+execute if score @e[tag=dummy,limit=1] MapSwitch matches 2 as @a[gamemode=spectator] unless entity @s[x=824,dx=225,y=0,dy=300,z=-910,dz=241] run tp @s 944.5 140 -801.5 facing 944.5 139 -801.5
+execute if score @e[tag=dummy,limit=1] MapSwitch matches 3 as @a[gamemode=spectator] unless entity @s[x=4253,dx=241,y=0,dy=300,z=-910,dz=241] run tp @s 4372.5 150 -803.5 facing 4372.5 149 -803.5
 

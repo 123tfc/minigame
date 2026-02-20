@@ -15,7 +15,7 @@ execute as @e[tag=temp_growth_bomb] run data modify entity @s Tags set value [gr
 
 
 playsound minecraft:entity.drowned.shoot master @a ~ ~ ~ 1 0.5
-execute if entity @s[nbt={Inventory:[{Slot: -106b, id: "minecraft:bone_meal", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:bone_meal",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
+execute if entity @s[nbt={equipment:{offhand:{id: "minecraft:bone_meal", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}}] unless entity @s[nbt={SelectedItem:{id:"minecraft:bone_meal",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:bone_meal",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.mainhand with air
 
 

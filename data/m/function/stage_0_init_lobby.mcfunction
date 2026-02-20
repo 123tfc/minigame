@@ -6,6 +6,7 @@ function m:lobby/summon_time_settings
 function m:lobby/summon_strength_settings
 function m:lobby/summon_start_button
 function m:lobby/summon_ms_text
+function m:lobby/summon_team_as
 function m:teams/create_teams
 tag @a add alive
 clear @a
@@ -16,7 +17,8 @@ scoreboard players set @e[tag=dummy] world_stage 1
 # Kill entities from maps:
 #Grass
 kill @e[type=!player,type=!armor_stand,x=-272,dx=138,z=-859,dz=138,y=94,dy=50]
-kill @e[tag=plainsrandomtp]
+kill @e[tag=randomtp]
+kill @e[tag=jump_pad]
 
 
 execute as @a unless entity @s[x=-10,dx=20,z=-130,dz=20,y=120,dy=20] run tp @s 0 121 -120 0 0

@@ -10,5 +10,5 @@ tellraw @a [{"text":"Don't Look Up! ","bold":true,"color":"#dd677a"},{"text":"Ah
 
 scoreboard players set @e[tag=dummy] meteor 0
 
-execute if score @e[tag=dummy,limit=1] MapSwitch matches 2 if entity @s[nbt={Inventory:[{Slot: -106b, id: "minecraft:fire_charge", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:fire_charge",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
+execute if entity @s[nbt={equipment:{offhand:{id: "minecraft:fire_charge", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}}] unless entity @s[nbt={SelectedItem:{id:"minecraft:fire_charge",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:fire_charge",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.mainhand with air

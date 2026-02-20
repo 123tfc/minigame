@@ -22,5 +22,5 @@ tag @s add pufferfish_thrower
 
 playsound minecraft:entity.puffer_fish.blow_up master @a ~ ~ ~ 1 2
 advancement revoke @s only m:powerups/pufferfish_grenade
-execute if entity @s[nbt={Inventory:[{Slot: -106b, id: "minecraft:pufferfish", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:pufferfish",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
+execute if entity @s[nbt={equipment:{offhand:{id: "minecraft:pufferfish", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}}] unless entity @s[nbt={SelectedItem:{id:"minecraft:pufferfish",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:pufferfish",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.mainhand with air

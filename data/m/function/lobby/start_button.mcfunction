@@ -24,6 +24,7 @@ execute if score @e[tag=dummy,limit=1] start_button matches 80 as @e[tag=start_b
 execute if score @e[tag=dummy,limit=1] start_button matches 80 as @e[tag=start_button,type=interaction] at @s run title @a subtitle {"text":"Game is starting...","italic":true,"color":"yellow"}
 execute if score @e[tag=dummy,limit=1] start_button matches 80 as @e[tag=start_button,type=interaction] at @s run title @a title {"text":"1","bold":true,"color":"dark_green"}
 
+
 execute if score @e[tag=dummy,limit=1] start_button matches 110 as @e[tag=start_button,type=interaction] at @s run playsound minecraft:block.bell.use master @a 0 122 -112 10 0.5
 execute if score @e[tag=dummy,limit=1] start_button matches 110 as @e[tag=start_button,type=interaction] at @s run playsound minecraft:block.anvil.place master @a 0 122 -112 0.2 0.5
 execute if score @e[tag=dummy,limit=1] start_button matches 110 as @e[tag=start_button,type=interaction] at @s run playsound minecraft:entity.wither.spawn master @a 0 122 -112 10 0.5
@@ -32,26 +33,38 @@ execute if score @e[tag=dummy,limit=1] start_button matches 110 as @e[tag=start_
 execute if score @e[tag=dummy,limit=1] start_button matches 110 as @e[tag=start_button,type=interaction] at @s run effect give @a minecraft:slowness 2 255 true
 execute if score @e[tag=dummy,limit=1] start_button matches 110 as @e[tag=start_button,type=interaction] at @s run effect give @a minecraft:blindness 3 255 true
 execute if score @e[tag=dummy,limit=1] start_button matches 110 as @e[tag=start_button,type=interaction] at @s run effect give @a minecraft:weakness 2 100 true
+execute if score @e[tag=dummy,limit=1] start_button matches 110 as @e[tag=start_button,type=interaction] at @s run stopwatch create reset_knockback
 execute if score @e[tag=dummy,limit=1] start_button matches 110 as @e[tag=start_button,type=interaction] at @s run tag @a remove dead
 execute if score @e[tag=dummy,limit=1] start_button matches 110 as @e[tag=start_button,type=interaction] at @s run tag @a add alive
 
 execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a run clear @s
 execute if score @e[tag=dummy,limit=1] start_button matches 110 run gamemode adventure
 execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a run function m:game/baseitems
+# execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a run scoreboard players reset * player_hurt_level
+execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a run scoreboard objectives remove player_hurt_level
+execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a run scoreboard objectives add player_hurt_level dummy
+execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a run scoreboard players set * player_hurt_level 0
 execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a run scoreboard players set @s respawncooldown 99
 
-execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 1 as @a run forceload add -245 -833 -161 -751
+execute if score @e[tag=dummy,limit=1] start_button matches 109 if score @e[tag=dummy,limit=1] MapSwitch matches 1 run forceload add -245 -833 -161 -751
 execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 1 as @a run tp @s -197.50 164.00 -786.50 facing -197.50 163.00 -786.50
-execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 1 as @a run function m:game/plains/summon_special_drop_plains
-execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 1 as @a run function m:game/plains/summon_drop_plains
-execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 1 as @a run forceload remove -245 -833 -161 -751
+execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 1 run function m:game/plains/summon_special_drop_plains
+execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 1 run function m:game/plains/summon_jumppad_plains
+execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 1 run function m:game/macros/summon_drop_macro {x1:"-272",x2:"-134",z1:"-859",z2:"-721",y:"170"}
+execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 1 run forceload remove -245 -833 -161 -751
 
 execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 2 as @a run forceload add 874 -856 1002 -740
 execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 2 as @a run tp @s 938 140 -797 facing 938 139 -797
 execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 2 as @a run function m:game/winter/summon_special_drop_winter
-execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 2 as @a run function m:game/winter/summon_drop_winter
+execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 2 as @a run function m:game/macros/summon_drop_macro {x1:"874",x2:"1002",z1:"-856",z2:"-744",y:"170"}
 execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 2 as @a run forceload remove 874 -856 1002 -740
 
+execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 3 as @a run forceload add 4304 -859 4442 -721
+execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 3 as @a run tp @s 4372.5 150 -803.5 facing 4372.5 149 -803.5
+execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 3 as @a run function m:game/nether/summon_special_drop_nether
+execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 3 as @a run function m:game/nether/summon_portals
+execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 3 as @a run function m:game/macros/summon_drop_macro {x1:"4347",x2:"4441",z1:"-814",z2:"-721",y:"180"}
+execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 3 as @a run forceload remove 4304 -859 4442 -721
 
 execute if score @e[tag=dummy,limit=1] start_button matches 110 as @e[tag=start_button,type=interaction] run kill @e[tag=start_button,type=interaction]
 

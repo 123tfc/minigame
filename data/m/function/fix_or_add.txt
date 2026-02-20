@@ -1,15 +1,15 @@
 Item:
 
 
-
+Yellow:
 Grenat: Skubber folk væk fra der hvor de står/Wind charge??
 
-Klone sig selv med en mannequin:
-    data modify entity @n[type=mannequin] profile.id set from entity @s UUID
+Blue:
 
-Spyd med knockback men low dura
 
-SLOW MOTION!! tick rate -> lav
+Default or Yellow: 
+
+Pink: 
 
 
 
@@ -21,9 +21,6 @@ MAN STARTER IKKE PÅ 0 KNOCKBACK!!! muligvis fixet
 
 
 
-Spawnprotection efter tp????? muligvis fixet
-
-Tid på Shrink Spell
 
 
 
@@ -46,3 +43,7 @@ Pufferfish Poison kortere tid + Fjern effects når du dør
 Warp anchor -> gør så man kan smadre 
 LONE WOLFS! (Enkeltmands hold)
 Grenat: modstandere -> store midlertidigt
+Clone Decoy
+Spyd med knockback men low dura
+Ikke spawnprotection efter tp længere
+Shrink og Fire Stick Lost on death

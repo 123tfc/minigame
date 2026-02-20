@@ -15,5 +15,6 @@ execute at @e[tag=smoke_bomb_marker,tag=boom] as @e[distance=..3] run effect giv
 
 
 
+
 kill @e[tag=smoke_bomb_marker,tag=boom]
 

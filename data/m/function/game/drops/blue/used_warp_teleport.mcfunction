@@ -19,5 +19,5 @@ execute at @s align xyz positioned ~-0.1 ~-0.6 ~-0.1 unless entity @e[tag=warp_a
 
 execute at @s align xyz positioned ~-0.1 ~-0.6 ~-0.1 run kill @e[tag=warp_anchor,dx=0.1,dy=0.6,dz=0.1]
 
-execute if entity @s[nbt={Inventory:[{Slot: -106b, id: "minecraft:ender_eye", }]}] unless entity @s[nbt={SelectedItem:{id:"minecraft:ender_eye"}}] run item replace entity @s weapon.offhand with air
+execute if entity @s[nbt={equipment:{offhand:{id: "minecraft:ender_eye", }}}] unless entity @s[nbt={SelectedItem:{id:"minecraft:ender_eye"}}] run item replace entity @s weapon.offhand with air
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:ender_eye"}}] run item replace entity @s weapon.mainhand with air

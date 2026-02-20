@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:notice",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:wooden_spear"
+      },
+      "height": 16
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {"text":"Knockback Spear","color":"#7D4927","bold": true,"underlined": true}
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [{"color":"white","text": "The KnockBack Spear is a Wooden Spear with knockback on it."},{"color":"#f5a29d","text":"\n\n Notice: \n This spear has only one durability."}]
+    }
+  ],
+  "action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:yellow/yellow"
+    }
+  }
+}

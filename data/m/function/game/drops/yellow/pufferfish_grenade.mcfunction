@@ -9,6 +9,7 @@ execute as @a at @s unless entity @e[tag=pufferfish_grenade,distance=..2] run ta
 execute as @e[type=minecraft:pufferfish,tag=pufferfish_grenade_boom] at @s run summon area_effect_cloud ~ ~ ~ {Particle:{type:dust,color:[0.094,0.639,0.51],scale:5},Radius:2,RadiusPerTick:0.05,potion_duration_scale:0.25f,Duration:100,potion_contents:{potion:poison,custom_color:1614722,duration:100}}
 execute as @e[type=minecraft:pufferfish,tag=pufferfish_grenade_boom] at @s run effect give @s invisibility 10 0 true
 execute as @e[type=minecraft:pufferfish,tag=pufferfish_grenade_boom] at @s run data modify entity @s Silent set value 1
+execute at @e[type=minecraft:pufferfish,tag=pufferfish_grenade_boom] as @e[distance=..3] run effect give @s minecraft:poison 10
 execute as @e[type=minecraft:pufferfish,tag=pufferfish_grenade_boom] at @s run playsound minecraft:entity.puffer_fish.sting master @a ~ ~ ~ 1 0.5
 execute as @e[type=minecraft:pufferfish,tag=pufferfish_grenade_boom] at @s run playsound minecraft:entity.puffer_fish.sting master @a ~ ~ ~ 1 1
 execute as @e[type=minecraft:pufferfish,tag=pufferfish_grenade_boom] at @s run tp ~ ~10000 ~

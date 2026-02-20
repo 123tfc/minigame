@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:multi_action",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "external_title": [{"color":"#ffffff","atlas":"items","sprite":"item/knowledge_book"},{"text":" KnockBlock","bold":true,"color":"#55ee88"}],
+  "body":[
+    {
+      "type": "plain_message",
+      "contents":[{"text":"The Drop Catalogue","underlined":true},{"text":"\n\n Here you can find Information about all the different Drops in the game!","underlined":false}]
+    }
+  ],
+  "actions":[
+    {
+        "label": [{"color":"white","atlas":"items","sprite":"item/stick"},{"text":"     Default Drops     "},{"color":"white","atlas":"items","sprite":"item/bow_pulling_2"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:default/default"
+      }
+    },
+    {
+        "label": [{"color":"white","atlas":"blocks","sprite":"block/ochre_froglight_side"},{"text":"    Offensive Drops    "},{"color":"white","atlas":"blocks","sprite":"block/ochre_froglight_side"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:yellow/yellow"
+      }
+    },
+    {
+        "label": [{"color":"white","atlas":"blocks","sprite":"block/verdant_froglight_side"},{"text":"      Chaotic Drops      "},{"color":"white","atlas":"blocks","sprite":"block/verdant_froglight_side"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:blue/blue"
+      }
+    },
+    {
+        "label": [{"color":"white","atlas":"blocks","sprite":"block/pearlescent_froglight_side"},{"text":"  Enhancement Drops  "},{"color":"white","atlas":"blocks","sprite":"block/pearlescent_froglight_side"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:pink/pink"
+      }
+    }
+  ],
+  "columns": 1,
+  "exit_action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:main"
+    }
+  }
+
+
+
+
+
+
+
+
+
+}
