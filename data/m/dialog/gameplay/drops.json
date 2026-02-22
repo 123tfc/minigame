@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:notice",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:verdant_froglight",
+          "components": {
+          "minecraft:enchantment_glint_override": false
+        }
+      },
+      "height": 16
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {"text":"Drops & Items","color":"yellow","bold": false,"underlined": true},
+        {"text":"\n\nItems spawn randomly around the map over time.\nThese can be powerups or other useful items.","color":"white","bold": false,"underlined": false},
+        {"text":"\n\n\nSpecial Drops","color":"yellow","bold": false,"underlined": false},
+        {"text":"\n\nThere are also marked special drop locations that respawn at set intervals:","color":"white","bold": false,"underlined": false},
+        {"text":"\n\nOffensive Drop ","color":"#FFFF44","bold": false,"underlined": false},
+        {"text":"– Weapons and offensive gadgets","color":"white","bold": false,"underlined": false},
+        {"text":"\nChaotic Drop ","color":"#AAAAFF","bold": false,"underlined": false},
+        {"text":"– Chaotic items and global events","color":"white","bold": false,"underlined": false},
+        {"text":"\nEnhancement Drop ","color":"#FFAAAA","bold": false,"underlined": false},
+        {"text":"– Temporary or permanent upgrades","color":"white","bold": false,"underlined": false},
+        {"text":"\n\n\nRead more about the drops in\nThe Drop Catalogue","color":"#AAAAAA","italic": true,"underlined": false}
+      ]
+    }
+  ],
+  "action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:gameplay"
+    }
+  }
+}

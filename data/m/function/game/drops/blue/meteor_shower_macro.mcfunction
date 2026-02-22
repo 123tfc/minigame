@@ -20,7 +20,7 @@ scoreboard players operation @e[tag=dummy2] meteor = @e[tag=dummy] meteor
 scoreboard players operation @e[tag=dummy2] meteor %= #modulus40 meteor
 
 
-$execute if score @n[tag=dummy2] meteor matches 0 as @r at @s positioned ~ $(y) ~ run summon minecraft:fireball ~ ~ ~ {Motion:[0.0,-1.0,0.0],Tags:[meteor],ExplosionPower:2b}
+$execute if score @n[tag=dummy2] meteor matches 0 as @r[gamemode=adventure] at @s positioned ~ $(y) ~ run summon minecraft:fireball ~ ~ ~ {Motion:[0.0,-1.0,0.0],Tags:[meteor],ExplosionPower:2b}
 
 $execute as @e[type=fireball,tag=meteor] unless entity @s[x=$(x1),dx=$(dx),z=$(z1),dz=$(dz),y=0,dy=300] run kill @s
 

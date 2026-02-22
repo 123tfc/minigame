@@ -33,3 +33,7 @@ team modify orange color gold
 team add lone "Lone Wolfs"
 team modify lone color gray
 # team join lone @e[name="Lone Wolfs"]
+
+team add spec "Spooky Spectators"
+team modify spec color gray
+# team join spec @e[name="Spooky Spectators"]

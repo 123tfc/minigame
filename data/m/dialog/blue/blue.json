@@ -11,7 +11,7 @@
     },
     {
       "type": "plain_message",
-      "contents":[{"text":"Chaotic Drops","underlined":true},{"text":"\n\nChaotic Drops are dropped only at specific Chaotic Drop locations.","underlined":false}]
+      "contents":[{"text":"Chaotic Drops","underlined":true,"color":"yellow"},{"text":"\n\nChaotic Drops are dropped only at specific Chaotic Drop locations.","color":"white","underlined":false}]
     }
   ],
   "actions":[

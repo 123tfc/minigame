@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:notice",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:crossbow",
+        "components":{
+          "minecraft:charged_projectiles":[{
+            "id":"minecraft:firework_rocket",
+            "count":1,
+            "components":{
+              "minecraft:fireworks":{
+                "flight_duration":1}}}]
+        }
+      },
+      "height": 16
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {"text":"Rocket Launcher","color":"#9b2323","bold": true,"underlined": true}
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [{"color":"white","text": "The Rocket Launcher is a deadly crossbow charged with a firework dealing a lot of damage."},{"color":"#f5a29d","text":"\n\n Notice: \n The Rocket Launcher is Single Use."}]
+    
+
+
+    }
+  ],
+  "action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:yellow/yellow"
+    }
+  }
+}

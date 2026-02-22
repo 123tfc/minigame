@@ -5,7 +5,7 @@
   "body":[
     {
       "type": "plain_message",
-      "contents":[{"text":"The Drop Catalogue","underlined":true},{"text":"\n\n Here you can find Information about all the different Drops in the game!","underlined":false}]
+      "contents":[{"text":"The Drop Catalogue","underlined":true,"color":"yellow"},{"text":"\n\n Here you can find Information about all the different Drops in the game!","underlined":false,"color":"white"}]
     }
   ],
   "actions":[

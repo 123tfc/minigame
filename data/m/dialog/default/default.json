@@ -11,7 +11,7 @@
     },
     {
       "type": "plain_message",
-      "contents":[{"text":"Default Drops","underlined":true},{"text":"\n\nDefault Drops are dropped randomly around the maps.","underlined":false}]
+      "contents":[{"text":"Default Drops","underlined":true,"color":"yellow"},{"text":"\n\nDefault Drops are dropped randomly around the maps.\nNot all default drops are listed here, the rest of the items being default minecraft items.","underlined":false,"color":"white"}]
     }
   ],
   "actions":[

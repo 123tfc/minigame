@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:notice",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:snow_block"
+        },
+      "height": 16
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {"text":"Winter","color":"aqua","bold": true,"underlined": true},
+        {"text":"\n\n\nSize: ","color":"yellow","bold": false,"underlined": false},
+        {"text":"Medium","color":"gold","bold": false,"underlined": false},
+        {"text":"\n\n\nRecommended No. of Players: ","color":"yellow","bold": false,"underlined": false},
+        {"text":"2 - 5","color":"white","bold": false,"underlined": false},
+
+        {"text":"\n\n\nDescription","color":"yellow","bold": false,"underlined": false},
+        {"text":"\n\nA snowy battleground featuring directional Launch Pads.\nLaunch yourself forward to escape danger, turn fights around, or reach the top of the central snowman.\n\nFast movement. Quick comebacks.","color":"white","bold": false,"underlined": false}
+      ]
+    }
+  ],
+  "action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:map_cat"
+    }
+  }
+}

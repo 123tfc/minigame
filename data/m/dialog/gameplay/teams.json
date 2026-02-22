@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:notice",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:leather_chestplate",
+          "components": {
+          "minecraft:enchantment_glint_override": true,
+          "minecraft:dyed_color":16729406
+        }
+      },
+      "height": 16
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {"text":"Teams","color":"yellow","bold": false,"underlined": true},
+        {"text":"\n\nWalk into an armor stand to join that respective team.\nPlayers on the same team cannot damage each other.\nThe last team with at least one player remaining wins.","color":"white","bold": false,"underlined": false},
+        {"text":"\n\n\nLone Wolfs ","color":"yellow","bold": false,"underlined": false},
+        {"text":"\n\nLone Wolves play solo with friendly fire enabled.\nBe careful — you can even damage yourself with your own bow.","color":"white","bold": false,"underlined": false}
+      ]
+    }
+  ],
+  "action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:gameplay"
+    }
+  }
+}

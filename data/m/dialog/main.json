@@ -5,7 +5,8 @@
   "body":[
     {
       "type": "plain_message",
-      "contents":[{"text":"Welcome To KnockBlock!","underlined":true},{"text":"\n\n In this Guidebook you will find all necessary information about KnockBlock!","underlined":false}]
+      "contents":[{"text":"Welcome To KnockBlock!","underlined":true,"color":"yellow"},
+      {"text":"\n\n In this Guidebook you will find all necessary information about KnockBlock!","underlined":false,"color":"white"}]
     }
   ],
   "actions":[
@@ -14,7 +15,7 @@
         "width": 150,
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "m:blue/blue"
+        "dialog": "m:gameplay"
       }
     },
     {

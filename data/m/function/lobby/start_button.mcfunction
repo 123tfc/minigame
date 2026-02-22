@@ -45,6 +45,8 @@ execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a run scoreb
 execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a run scoreboard objectives add player_hurt_level dummy
 execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a run scoreboard players set * player_hurt_level 0
 execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a run scoreboard players set @s respawncooldown 99
+execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a[team=spec] run tag @s remove alive
+execute if score @e[tag=dummy,limit=1] start_button matches 110 as @a[team=spec] run tag @s add dead
 
 execute if score @e[tag=dummy,limit=1] start_button matches 109 if score @e[tag=dummy,limit=1] MapSwitch matches 1 run forceload add -245 -833 -161 -751
 execute if score @e[tag=dummy,limit=1] start_button matches 110 if score @e[tag=dummy,limit=1] MapSwitch matches 1 as @a run tp @s -197.50 164.00 -786.50 facing -197.50 163.00 -786.50

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:notice",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:grass_block",
+          "components": {
+          "minecraft:enchantment_glint_override": false
+        }
+      },
+      "height": 16
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {"text":"Plains","color":"green","bold": true,"underlined": true},
+        {"text":"\n\n\nSize: ","color":"yellow","bold": false,"underlined": false},
+        {"text":"Large","color":"red","bold": false,"underlined": false},
+        {"text":"\n\n\nRecommended No. of Players: ","color":"yellow","bold": false,"underlined": false},
+        {"text":"3 - 6","color":"white","bold": false,"underlined": false},
+
+        {"text":"\n\n\nDescription","color":"yellow","bold": false,"underlined": false},
+        {"text":"\n\nA classic floating plains arena with powerful Jump Pads that launch you high into the sky.\nUse them to reach floating islands and secure special drops or make risky aerial plays.\n\nSimple layout. Vertical freedom.","color":"white","bold": false,"underlined": false}
+      ]
+    }
+  ],
+  "action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:map_cat"
+    }
+  }
+}

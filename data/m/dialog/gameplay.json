@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:multi_action",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:writable_book",
+          "components": {
+          "minecraft:enchantment_glint_override": false
+        }
+      },
+      "height": 16
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {"text":"Gameplay","color":"yellow","bold": false,"underlined": true},
+        {"text":"\n\n\nHow to play ","color":"yellow","bold": false,"underlined": false},
+        {"text":"\n\nKnock your opponents off the map and into the void.\n\nPlayers start at 0% knockback and won’t be launched far when hit.\nEach hit increases your percentage (based on the selected strength), causing you to take more knockback.\nAt high percentages, even a small hit can send you flying.\n\nEveryone starts with a knockback stick and a punch bow.\nFalling into the void costs a life.\nAfter respawning, your percentage resets to 0% and you gain 5 arrows.\nLose all your lives, and you're out.","color":"white","bold": false,"underlined": false}
+      ]
+    }
+  ],
+  "actions":[
+    {
+        "label": [{"color":"#FF4444","atlas":"items","sprite":"item/leather_chestplate"},{"text":"         Teams         ","color":"white"},{"color":"#4444FF","atlas":"items","sprite":"item/leather_chestplate"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:gameplay/teams"
+      }
+    },
+    {
+        "label": [{"color":"white","atlas":"blocks","sprite":"block/verdant_froglight_side"},{"text":"    Drops & Items    "},{"color":"white","atlas":"blocks","sprite":"block/ochre_froglight_side"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:gameplay/drops"
+      }
+    }
+  ],
+  "columns": 1,
+  "exit_action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:main"
+    }
+  }
+}

@@ -11,7 +11,7 @@
     },
     {
       "type": "plain_message",
-      "contents":[{"text":"Offensive Drops","underlined":true},{"text":"\n\nOffensive Drops are dropped only at specific Offensive Drop locations.","underlined":false}]
+      "contents":[{"text":"Offensive Drops","underlined":true,"color":"yellow"},{"text":"\n\nOffensive Drops are dropped only at specific Offensive Drop locations.","underlined":false,"color":"white"}]
     }
   ],
   "actions":[
@@ -55,6 +55,13 @@
       "action":{
         "type": "show_dialog",
         "dialog": "m:yellow/spear"
+      }
+    },
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/crossbow_firework"},{"text":" Rocket Launcher "},{"color":"white","atlas":"items","sprite":"item/crossbow_firework"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:yellow/rocket_launcher"
       }
     }
   ],

@@ -53,7 +53,7 @@
     "label": "Done",
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "m:drop_cat"
+      "dialog": "m:main"
     }
   }
 }

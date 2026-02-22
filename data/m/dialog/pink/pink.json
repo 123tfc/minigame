@@ -11,7 +11,7 @@
     },
     {
       "type": "plain_message",
-      "contents":[{"text":"Enhancement Drops","underlined":true},{"text":"\n\nEnhancement Drops are dropped only at one specific Enhancement Drop location on each map.","underlined":false}]
+      "contents":[{"text":"Enhancement Drops","underlined":true,"color":"yellow"},{"text":"\n\nEnhancement Drops are dropped only at one specific Enhancement Drop location on each map.","underlined":false,"color":"white"}]
     }
   ],
   "actions":[

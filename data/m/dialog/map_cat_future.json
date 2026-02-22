@@ -15,7 +15,7 @@
         "width": 150,
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "m:maps/plains"
+        "dialog": "m:default/default"
       }
     },
     {
@@ -23,7 +23,7 @@
         "width": 150,
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "m:maps/winter"
+        "dialog": "m:yellow/yellow"
       }
     },
     {
@@ -31,7 +31,23 @@
         "width": 150,
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "m:maps/nether"
+        "dialog": "m:blue/blue"
+      }
+    },
+    {
+        "label": [{"color":"white","atlas":"items","sprite":"item/dark_oak_door"},{"text":"            City            "},{"color":"white","atlas":"items","sprite":"item/dark_oak_door"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:pink/pink"
+      }
+    },
+    {
+        "label": [{"color":"white","atlas":"blocks","sprite":"block/test_block_accept"},{"text":"          Arcade          "},{"color":"white","atlas":"blocks","sprite":"block/test_block_fail"}],
+        "width": 150,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "m:pink/pink"
       }
     }
   ],
@@ -41,8 +57,20 @@
     "action": {
       "type": "minecraft:show_dialog",
       "dialog": "m:main"
+    },
+    "_comment":{"hej":"hej",
+    "hell":"hell"
     }
   }
+
+
+
+
+
+
+
+
+
 }
 
 

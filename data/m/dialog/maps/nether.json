@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:notice",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:netherrack",
+          "components": {
+          "minecraft:enchantment_glint_override": false
+        }
+      },
+      "height": 16
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {"text":"Nether","color":"red","bold": true,"underlined": true},
+        {"text":"\n\n\nSize: ","color":"yellow","bold": false,"underlined": false},
+        {"text":"Huge","color":"dark_purple","bold": false,"underlined": false},
+        {"text":"\n\n\nRecommended No. of Players: ","color":"yellow","bold": false,"underlined": false},
+        {"text":"6+","color":"white","bold": false,"underlined": false},
+
+        {"text":"\n\n\nDescription","color":"yellow","bold": false,"underlined": false},
+        {"text":"\n\nA chaotic multi-biome arena with paired Colored Portals.\nTeleport instantly across the map and gain an upward boost to access floating islands and hidden areas.\n\nUnpredictable. Aggressive. High mobility.","color":"white","bold": false,"underlined": false}
+      ]
+    }
+  ],
+  "action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:map_cat"
+    }
+  }
+}

@@ -31,11 +31,11 @@ execute if score @e[limit=1,tag=dummy] MapSwitch matches 5 run data modify entit
 
 #  Højreklik
 
-execute as @e[type=interaction,tag=MapSwitch,tag=Nether,tag=UnUsed] if data entity @s interaction on target run scoreboard players set @e[tag=dummy] MapSwitch 1
-execute as @e[type=interaction,tag=MapSwitch,tag=Nether,tag=UnUsed] if data entity @s interaction on target run scoreboard objectives add plainsAnimation dummy
-execute as @e[type=interaction,tag=MapSwitch,tag=Nether,tag=UnUsed] if data entity @s interaction on target run scoreboard players set @e[tag=dummy] plainsAnimation 0
-execute as @e[type=interaction,tag=MapSwitch,tag=Nether,tag=UnUsed] if data entity @s interaction on target run summon minecraft:interaction 6.5 121.8 -113.5 {height:1.1,width:1.1,Tags:[Temp]}
-execute if score @e[limit=1,tag=dummy] MapSwitch matches 1 as @e[type=minecraft:interaction,tag=MapSwitch,tag=Nether] run data merge entity @s {Tags:[MapSwitch,Plains,Used]}
+execute as @e[type=interaction,tag=MapSwitch,tag=Game,tag=UnUsed] if data entity @s interaction on target run scoreboard players set @e[tag=dummy] MapSwitch 1
+execute as @e[type=interaction,tag=MapSwitch,tag=Game,tag=UnUsed] if data entity @s interaction on target run scoreboard objectives add plainsAnimation dummy
+execute as @e[type=interaction,tag=MapSwitch,tag=Game,tag=UnUsed] if data entity @s interaction on target run scoreboard players set @e[tag=dummy] plainsAnimation 0
+execute as @e[type=interaction,tag=MapSwitch,tag=Game,tag=UnUsed] if data entity @s interaction on target run summon minecraft:interaction 6.5 121.8 -113.5 {height:1.1,width:1.1,Tags:[Temp]}
+execute if score @e[limit=1,tag=dummy] MapSwitch matches 1 as @e[type=minecraft:interaction,tag=MapSwitch,tag=Game] run data merge entity @s {Tags:[MapSwitch,Plains,Used]}
 
 
 
@@ -54,18 +54,18 @@ execute as @e[type=interaction,tag=MapSwitch,tag=Winter,tag=UnUsed] if data enti
 execute if score @e[limit=1,tag=dummy] MapSwitch matches 3 as @e[type=minecraft:interaction,tag=MapSwitch,tag=Winter] run data merge entity @s {Tags:[MapSwitch,Nether,Used]}
 
 
-# execute as @e[type=interaction,tag=MapSwitch,tag=Nether,tag=UnUsed] if data entity @s interaction on target run scoreboard players set @e[tag=dummy] MapSwitch 4
-# execute as @e[type=interaction,tag=MapSwitch,tag=Nether,tag=UnUsed] if data entity @s interaction on target run scoreboard objectives add cityAnimation dummy
-# execute as @e[type=interaction,tag=MapSwitch,tag=Nether,tag=UnUsed] if data entity @s interaction on target run scoreboard players set @e[tag=dummy] cityAnimation 0
-# execute as @e[type=interaction,tag=MapSwitch,tag=Nether,tag=UnUsed] if data entity @s interaction on target run summon minecraft:interaction 6.5 121.8 -113.5 {height:1.1,width:1.1,Tags:[Temp]}
-# execute if score @e[limit=1,tag=dummy] MapSwitch matches 4 as @e[type=minecraft:interaction,tag=MapSwitch,tag=Nether] run data merge entity @s {Tags:[MapSwitch,City,Used]}
+execute as @e[type=interaction,tag=MapSwitch,tag=Nether,tag=UnUsed] if data entity @s interaction on target run scoreboard players set @e[tag=dummy] MapSwitch 4
+execute as @e[type=interaction,tag=MapSwitch,tag=Nether,tag=UnUsed] if data entity @s interaction on target run scoreboard objectives add cityAnimation dummy
+execute as @e[type=interaction,tag=MapSwitch,tag=Nether,tag=UnUsed] if data entity @s interaction on target run scoreboard players set @e[tag=dummy] cityAnimation 0
+execute as @e[type=interaction,tag=MapSwitch,tag=Nether,tag=UnUsed] if data entity @s interaction on target run summon minecraft:interaction 6.5 121.8 -113.5 {height:1.1,width:1.1,Tags:[Temp]}
+execute if score @e[limit=1,tag=dummy] MapSwitch matches 4 as @e[type=minecraft:interaction,tag=MapSwitch,tag=Nether] run data merge entity @s {Tags:[MapSwitch,City,Used]}
 
 
-# execute as @e[type=interaction,tag=MapSwitch,tag=City,tag=UnUsed] if data entity @s interaction on target run scoreboard players set @e[tag=dummy] MapSwitch 5
-# execute as @e[type=interaction,tag=MapSwitch,tag=City,tag=UnUsed] if data entity @s interaction on target run scoreboard objectives add gameAnimation dummy
-# execute as @e[type=interaction,tag=MapSwitch,tag=City,tag=UnUsed] if data entity @s interaction on target run scoreboard players set @e[tag=dummy] gameAnimation 0
-# execute as @e[type=interaction,tag=MapSwitch,tag=City,tag=UnUsed] if data entity @s interaction on target run summon minecraft:interaction 6.5 121.8 -113.5 {height:1.1,width:1.1,Tags:[Temp]}
-# execute if score @e[limit=1,tag=dummy] MapSwitch matches 5 as @e[type=minecraft:interaction,tag=MapSwitch,tag=City] run data merge entity @s {Tags:[MapSwitch,Game,Used]}
+execute as @e[type=interaction,tag=MapSwitch,tag=City,tag=UnUsed] if data entity @s interaction on target run scoreboard players set @e[tag=dummy] MapSwitch 5
+execute as @e[type=interaction,tag=MapSwitch,tag=City,tag=UnUsed] if data entity @s interaction on target run scoreboard objectives add gameAnimation dummy
+execute as @e[type=interaction,tag=MapSwitch,tag=City,tag=UnUsed] if data entity @s interaction on target run scoreboard players set @e[tag=dummy] gameAnimation 0
+execute as @e[type=interaction,tag=MapSwitch,tag=City,tag=UnUsed] if data entity @s interaction on target run summon minecraft:interaction 6.5 121.8 -113.5 {height:1.1,width:1.1,Tags:[Temp]}
+execute if score @e[limit=1,tag=dummy] MapSwitch matches 5 as @e[type=minecraft:interaction,tag=MapSwitch,tag=City] run data merge entity @s {Tags:[MapSwitch,Game,Used]}
 
 
 # Venstreklik
@@ -86,25 +86,25 @@ execute if score @e[limit=1,tag=dummy] MapSwitch matches 2 as @e[type=interactio
 
 
 
-execute as @e[type=interaction,tag=MapSwitch,tag=Plains,tag=UnUsed] if data entity @s attack on attacker run scoreboard players set @e[tag=dummy] MapSwitch 3
-execute as @e[type=interaction,tag=MapSwitch,tag=Plains,tag=UnUsed] if data entity @s attack on attacker run scoreboard objectives add netherAnimation dummy
-execute as @e[type=interaction,tag=MapSwitch,tag=Plains,tag=UnUsed] if data entity @s attack on attacker run scoreboard players set @e[tag=dummy] netherAnimation 0
+execute as @e[type=interaction,tag=MapSwitch,tag=City,tag=UnUsed] if data entity @s attack on attacker run scoreboard players set @e[tag=dummy] MapSwitch 3
+execute as @e[type=interaction,tag=MapSwitch,tag=City,tag=UnUsed] if data entity @s attack on attacker run scoreboard objectives add netherAnimation dummy
+execute as @e[type=interaction,tag=MapSwitch,tag=City,tag=UnUsed] if data entity @s attack on attacker run scoreboard players set @e[tag=dummy] netherAnimation 0
+execute as @e[type=interaction,tag=MapSwitch,tag=City,tag=UnUsed] if data entity @s attack on attacker run summon interaction 6.5 121.8 -113.5 {height:1.1,width:1.1,Tags:[Temp]}
+execute if score @e[limit=1,tag=dummy] MapSwitch matches 3 as @e[type=interaction,tag=MapSwitch,tag=City] run data merge entity @s {Tags:[MapSwitch,Nether,Used]}
+
+
+execute as @e[type=interaction,tag=MapSwitch,tag=Game,tag=UnUsed] if data entity @s attack on attacker run scoreboard players set @e[tag=dummy] MapSwitch 4
+execute as @e[type=interaction,tag=MapSwitch,tag=Game,tag=UnUsed] if data entity @s attack on attacker run scoreboard objectives add cityAnimation dummy
+execute as @e[type=interaction,tag=MapSwitch,tag=Game,tag=UnUsed] if data entity @s attack on attacker run scoreboard players set @e[tag=dummy] cityAnimation 0
+execute as @e[type=interaction,tag=MapSwitch,tag=Game,tag=UnUsed] if data entity @s attack on attacker run summon interaction 6.5 121.8 -113.5 {height:1.1,width:1.1,Tags:[Temp]}
+execute if score @e[limit=1,tag=dummy] MapSwitch matches 4 as @e[type=interaction,tag=MapSwitch,tag=Game] run data merge entity @s {Tags:[MapSwitch,City,Used]}
+
+
+execute as @e[type=interaction,tag=MapSwitch,tag=Plains,tag=UnUsed] if data entity @s attack on attacker run scoreboard players set @e[tag=dummy] MapSwitch 5
+execute as @e[type=interaction,tag=MapSwitch,tag=Plains,tag=UnUsed] if data entity @s attack on attacker run scoreboard objectives add gameAnimation dummy
+execute as @e[type=interaction,tag=MapSwitch,tag=Plains,tag=UnUsed] if data entity @s attack on attacker run scoreboard players set @e[tag=dummy] gameAnimation 0
 execute as @e[type=interaction,tag=MapSwitch,tag=Plains,tag=UnUsed] if data entity @s attack on attacker run summon interaction 6.5 121.8 -113.5 {height:1.1,width:1.1,Tags:[Temp]}
-execute if score @e[limit=1,tag=dummy] MapSwitch matches 3 as @e[type=interaction,tag=MapSwitch,tag=Plains] run data merge entity @s {Tags:[MapSwitch,Nether,Used]}
-
-
-# execute as @e[type=interaction,tag=MapSwitch,tag=Game,tag=UnUsed] if data entity @s attack on attacker run scoreboard players set @e[tag=dummy] MapSwitch 4
-# execute as @e[type=interaction,tag=MapSwitch,tag=Game,tag=UnUsed] if data entity @s attack on attacker run scoreboard objectives add cityAnimation dummy
-# execute as @e[type=interaction,tag=MapSwitch,tag=Game,tag=UnUsed] if data entity @s attack on attacker run scoreboard players set @e[tag=dummy] cityAnimation 0
-# execute as @e[type=interaction,tag=MapSwitch,tag=Game,tag=UnUsed] if data entity @s attack on attacker run summon interaction 6.5 121.8 -113.5 {height:1.1,width:1.1,Tags:[Temp]}
-# execute if score @e[limit=1,tag=dummy] MapSwitch matches 4 as @e[type=interaction,tag=MapSwitch,tag=Game] run data merge entity @s {Tags:[MapSwitch,City,Used]}
-
-
-# execute as @e[type=interaction,tag=MapSwitch,tag=Plains,tag=UnUsed] if data entity @s attack on attacker run scoreboard players set @e[tag=dummy] MapSwitch 5
-# execute as @e[type=interaction,tag=MapSwitch,tag=Plains,tag=UnUsed] if data entity @s attack on attacker run scoreboard objectives add gameAnimation dummy
-# execute as @e[type=interaction,tag=MapSwitch,tag=Plains,tag=UnUsed] if data entity @s attack on attacker run scoreboard players set @e[tag=dummy] gameAnimation 0
-# execute as @e[type=interaction,tag=MapSwitch,tag=Plains,tag=UnUsed] if data entity @s attack on attacker run summon interaction 6.5 121.8 -113.5 {height:1.1,width:1.1,Tags:[Temp]}
-# execute if score @e[limit=1,tag=dummy] MapSwitch matches 5 as @e[type=interaction,tag=MapSwitch,tag=Plains] run data merge entity @s {Tags:[MapSwitch,Game,Used]}
+execute if score @e[limit=1,tag=dummy] MapSwitch matches 5 as @e[type=interaction,tag=MapSwitch,tag=Plains] run data merge entity @s {Tags:[MapSwitch,Game,Used]}
 
 
 
