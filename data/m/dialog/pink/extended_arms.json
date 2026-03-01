@@ -18,7 +18,7 @@
     },
     {
     "type": "minecraft:plain_message",
-    "contents": [{"color":"white","text": "Picking up the Extended Arms grants you further reach in the next 30s."}]
+    "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Extended Arms grants you further reach in the next 30s."}]
     }
 ],
 "action": {

@@ -23,6 +23,13 @@
       }
     },
     {
+      "label": [{"color":"white","atlas":"items","sprite":"item/glow_ink_sac"},{"text":" Global Glow Up "},{"color":"white","atlas":"items","sprite":"item/glow_ink_sac"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:blue/motion_sickness"
+      }
+    },
+    {
       "label": [{"color":"white","atlas":"items","sprite":"item/lead"},{"text":" Horsies For All "},{"color":"white","atlas":"items","sprite":"item/lead"}],
       "action":{
         "type": "show_dialog",

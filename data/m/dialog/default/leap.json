@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:notice",
+  "title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:phantom_membrane",
+          "components": {
+          "minecraft:enchantment_glint_override": true
+        }
+      },
+      "height": 16
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {"text": "Leap","color": "#EECCFF","bold": true,"underlined": true}
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Leap item will launch you into the air and a bit forwards. This will also knock other close players back."}]
+    }
+  ],
+  "action": {
+    "label": "Done",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "m:default/default"
+    }
+  }
+}

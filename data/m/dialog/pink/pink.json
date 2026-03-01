@@ -44,6 +44,13 @@
       }
     },
     {
+      "label": [{"color":"white","atlas":"items","sprite":"item/cake"},{"text":" Heal Pool "},{"color":"white","atlas":"items","sprite":"item/cake"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:pink/heal_pool"
+      }
+    },
+    {
       "label": [{"color":"white","atlas":"items","sprite":"item/end_crystal"},{"text":" Extra Life "},{"color":"white","atlas":"items","sprite":"item/end_crystal"}],
       "action":{
         "type": "show_dialog",

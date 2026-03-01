@@ -1,0 +1,31 @@
+{
+"type": "minecraft:notice",
+"title": [{"text":"       "},{"color":"#55ee88","text":"KnockBlock Guidebook"}],
+"body": [
+    {
+    "type": "minecraft:item",
+    "item": {
+        "id": "minecraft:cake",
+        "components": {
+        "minecraft:enchantment_glint_override": false
+        }
+    },
+    "height": 16
+    },
+    {
+    "type": "minecraft:plain_message",
+    "contents": {"text":"Heal Pool","color":"#fc9cf7","bold": true,"underlined": true}
+    },
+    {
+    "type": "minecraft:plain_message",
+    "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Heal Pool summons a cake marked with a colored candle corresponding to your teams color.\n\n Every 0.5s the Heal Pool will reduce a random teammate within the marked area's knockback percentage by 2%."},{"color":"#f5a29d","text":"\n\n Notice: \n Attempting to use it whenever you're not on the ground will result in failure, but you may keep the item.\n\nWhen used by a Lone Wolf the Heal Pool will heal all Lone Wolfs, even though they are not your allies."}]
+    }
+],
+"action": {
+    "label": "Done",
+    "action": {
+    "type": "minecraft:show_dialog",
+    "dialog": "m:pink/pink"
+    }
+}
+}

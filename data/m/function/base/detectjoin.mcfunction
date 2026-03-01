@@ -12,6 +12,7 @@ execute if score @n[tag=dummy] world_stage matches 1 as @a[scores={join=1}] run 
 execute if score @n[tag=dummy] world_stage matches 1 as @a[scores={join=1}] run gamemode adventure @s
 execute if score @n[tag=dummy] world_stage matches 1 as @a[scores={join=1}] run clear @s
 execute if score @n[tag=dummy] world_stage matches 1 as @a[scores={join=1}] run attribute @s minecraft:scale base set 1
+execute if score @n[tag=dummy] world_stage matches 1 as @a[scores={join=1}] run function m:base/player_hurt
 execute if score @n[tag=dummy] world_stage matches 1 as @a[scores={join=1}] run function m:base/knockback
 
 execute as @a[scores={join=2}] run scoreboard players add #n_players join 1

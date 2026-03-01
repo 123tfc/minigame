@@ -12,6 +12,12 @@ Default or Yellow:
 Pink: 
 Evt perm elytra??? Skal vurderes
 
+MAGMA BLOCKS??!?!?
+100% kb ild stopper ikke
+
+
+TIL SIDST:
+gamerule send_command_feedback false
 
 -------------
 

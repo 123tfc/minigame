@@ -1,9 +1,11 @@
 function m:game/drops/elytradrop
 function m:game/drops/heavy_star
+function m:game/drops/used_leap
 function m:game/drops/pink/extra_life
 function m:game/drops/pink/infinity_bow
 function m:game/drops/pink/fire_stick
 function m:game/drops/pink/extended_arms
+function m:game/drops/pink/used_heal_pool
 function m:game/drops/yellow/pufferfish_grenade
 function m:game/drops/yellow/detect_landmine
 function m:game/drops/yellow/detect_smoke_bomb
@@ -18,3 +20,4 @@ function m:game/drops/blue/destroy_warp_anchor
 function m:game/drops/blue/gravitation_switch
 function m:game/drops/blue/slow_time
 function m:game/drops/blue/clone_decoy
+function m:game/drops/blue/pop_up_wall_id

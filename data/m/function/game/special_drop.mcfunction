@@ -103,5 +103,5 @@ execute as @e[tag=yellow_drop_td] at @s if score @s special_drop matches 1201 po
 execute as @e[tag=yellow_drop_td] at @s if score @s special_drop matches 1201 positioned ~ ~-1 ~ unless entity @e[tag=yellow_drop_item,distance=..0.5] run summon firework_rocket ~ ~ ~ {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_twinkle:true,has_trail:true,colors:[I;16777028],fade_colors:[I;16777215]}]}}}}
 execute as @e[tag=yellow_drop_td] at @s if score @s special_drop matches 1201 positioned ~ ~-1 ~ unless entity @e[tag=yellow_drop_item,distance=..0.5] run scoreboard players set @n[tag=yellow_drop_td] special_drop 0
 
-
+execute at @e[tag=special_drop] positioned ~-1.5 ~-3 ~-1.5 as @e[tag=pop_up_wall,dx=2,dy=4,dz=2] run kill @s
 

@@ -10,6 +10,8 @@ execute as @a[tag=!victory,gamemode=!spectator] if score @s respawncooldown matc
 execute as @a store result score @s hit_uuid on attacker run data get entity @s UUID[0]
 execute as @a if score @s ylevel matches ..0 run tag @s add just_died
 execute as @a if score @s uuid = @p[tag=just_died] hit_uuid run tag @s add just_killed
+execute as @a[tag=just_killed] run scoreboard players operation @s player_hurt_level *= #multiply70 calc
+execute as @a[tag=just_killed] run scoreboard players operation @s player_hurt_level /= #division100 calc
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 1 unless score @s health matches 2 unless entity @s[scores={hit_uuid=0}] run tellraw @a [{"selector":"@s[tag=just_died]"},{"text":" was knocked out by ","color":"white"},{"selector":"@p[tag=just_killed]"}]
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 1 if score @s health matches 2 unless entity @s[scores={hit_uuid=0}] run tellraw @a [{"selector":"@s[tag=just_died]"},{"text":" was knocked out by ","color":"white"},{"selector":"@p[tag=just_killed]"},{"text":" FINAL KILL!","bold":true,"color":"red"}]
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 1 unless score @s health matches 2 if entity @s[scores={hit_uuid=0}] run tellraw @a [{"selector":"@s[tag=just_died]"},{"text":" fell into void","color":"white"}]

@@ -1,0 +1,22 @@
+{
+    "criteria": {
+      "glow_ink_sac": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:glow_ink_sac",
+            "components": {
+              "minecraft:food": {
+                "nutrition": 0,
+                "saturation": 0,
+                "can_always_eat": true
+              }
+            }
+          }
+        }
+      }
+       },
+       "rewards": {
+         "function": "m:game/drops/blue/used_global_glow_up"
+       }
+ }

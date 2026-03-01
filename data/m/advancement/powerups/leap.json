@@ -1,0 +1,22 @@
+{
+    "criteria": {
+      "mangrove_propagule": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:phantom_membrane",
+            "components": {
+              "minecraft:food": {
+                "nutrition": 0,
+                "saturation": 0,
+                "can_always_eat": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "m:game/drops/used_leap"
+    }
+  }

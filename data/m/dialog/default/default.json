@@ -56,6 +56,13 @@
         "type": "show_dialog",
         "dialog": "m:default/heavy_star"
       }
+    },
+    {
+      "label": [{"color":"white","atlas":"items","sprite":"item/phantom_membrane"},{"color":"white","bold":false,"text":"  Leap  "},{"color":"white","atlas":"items","sprite":"item/phantom_membrane"}],
+      "action":{
+        "type": "show_dialog",
+        "dialog": "m:default/leap"
+      }
     }
     
     

@@ -29,5 +29,13 @@ execute as @a if entity @s[team=orange] unless entity @s[nbt={active_effects:[{i
 execute at @e[type=minecraft:armor_stand,name="Lone Wolfs"] positioned ~ ~.5 ~ as @a if entity @s[distance=..1] run team join lone @s
 execute as @a if entity @s[team=lone] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run item replace entity @s armor.head with minecraft:player_head[custom_name={"text":"Orange Clownfish","italic":false},profile={properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmYxNmM1ODFlZjJmNTY2NmM3NTk3Njg1MDZiY2E0MTA2NDAzYWQ4MDM1YjVjNmU0MzFhYTZiNjIzYmQ2YzRkNyJ9fX0="}]},enchantments={"binding_curse":1}]
 
-execute at @e[type=minecraft:armor_stand,name="Spooky Spectators"] positioned ~ ~.5 ~ as @a if entity @s[distance=..1] run team join spec @s
+# execute at @e[type=minecraft:armor_stand,name="Spooky Spectators"] positioned ~ ~.5 ~ as @a if entity @s[distance=..1] run team join spec @s
+execute at @e[type=minecraft:armor_stand,name="Spooky Spectators"] positioned ~ ~.5 ~ as @a if entity @s[distance=..1] run scoreboard players enable @s spec
+execute at @e[type=minecraft:armor_stand,name="Spooky Spectators"] positioned ~ ~.5 ~ as @a[tag=!temp_spec] if entity @s[distance=..1] run tellraw @s {"click_event":{"action":"run_command","command":"trigger spec"},"color":"gray","italic":true,"text":"Click here to spectate"}
+execute at @e[type=minecraft:armor_stand,name="Spooky Spectators"] positioned ~ ~.5 ~ as @a[tag=!temp_spec] if entity @s[distance=..1] run tag @s add temp_spec
+execute at @e[type=minecraft:armor_stand,name="Spooky Spectators"] positioned ~ ~.5 ~ as @a[tag=temp_spec] unless entity @s[distance=..1.5] run tag @s remove temp_spec
+execute as @a[scores={spec=1..}] run team join spec @s
+execute as @a[scores={spec=1..}] run scoreboard players reset @s spec
+execute as @a unless entity @s[scores={spec=0..}] if score @e[tag=dummy,limit=1] world_stage matches 1 run scoreboard players enable @s spec
+execute if score @e[tag=dummy,limit=1] world_stage matches 2 run scoreboard players reset @a spec
 execute as @a if entity @s[team=spec] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run item replace entity @s armor.head with minecraft:player_head[custom_name={"text":"Spooky Spectators","italic":false},profile={properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmRmZTQ4MThmMzlhOTUyNTIxOGVhMDMyMzgyNDA3ZjA4M2E5YzUyYTNlMGZhNTFhMzQ1Yzc4MWRlOTE0MzQ1NyJ9fX0="}]},enchantments={"binding_curse":1}]
