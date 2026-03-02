@@ -14,6 +14,7 @@ function m:base/player_hurt
 function m:base/knockback
 
 
+
 execute if stopwatch minecraft:summon_default_drop 5.. if entity @e[tag=dummy,limit=1,scores={MapSwitch=1}] run function m:game/macros/summon_drop_macro {x1:"-272",x2:"-134",z1:"-859",z2:"-721",y:"170"}
 execute if stopwatch minecraft:summon_default_drop 5.. if entity @e[tag=dummy,limit=1,scores={MapSwitch=2}] run function m:game/macros/summon_drop_macro {x1:"874",x2:"1002",z1:"-856",z2:"-744",y:"170"}
 execute if stopwatch minecraft:summon_default_drop 4.. if entity @e[tag=dummy,limit=1,scores={MapSwitch=3}] run function m:game/macros/summon_drop_macro {x1:"4305",x2:"4441",z1:"-856",z2:"-721",y:"180"}

@@ -6,3 +6,4 @@ gamerule advance_weather false
 forceload add -50 -150 25 -100
 function m:stage_0_init_lobby
 function m:teams/create_teams
+setworldspawn 0 120 -120

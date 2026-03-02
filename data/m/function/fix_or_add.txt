@@ -10,20 +10,20 @@ Blue:
 Default or Yellow: 
 
 Pink: 
-Evt perm elytra??? Skal vurderes
 
-MAGMA BLOCKS??!?!?
-100% kb ild stopper ikke
+
+# MAGMA BLOCKS??!?!?
+# 100% kb ild stopper ikke
 
 
 TIL SIDST:
 gamerule send_command_feedback false
-
+i function stage_1_lobby fjern # fra 2 commands
+Fjern player data fra filerne
 -------------
 
 Fix:
 
-MAN STARTER IKKE PÅ 0 KNOCKBACK!!! muligvis fixet
 
 
 
