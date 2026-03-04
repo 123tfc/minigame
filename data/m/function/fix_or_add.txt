@@ -11,15 +11,25 @@ Default or Yellow:
 
 Pink: 
 
+EVT 
 
-# MAGMA BLOCKS??!?!?
-# 100% kb ild stopper ikke
+EVT LYS OP PÅ MAPSNE SÅ MAN KAN SE BARE EN SMULE OM NATTEN???
 
-
-TIL SIDST:
+----------------------------------------------------------------------------------------------------
+TIL SIDST: (Lav en single player verden og gør disse ting)
 gamerule send_command_feedback false
 i function stage_1_lobby fjern # fra 2 commands
 Fjern player data fra filerne
+Fjern alle structure blocks
+
+
+Til Udgivelse Fjern Fra Datapack:
+"Future" filerne
+Python filerne
+text dokumenterne som det her
+
+----------------------------------------------------------------------------------------------------
+
 -------------
 
 Fix:

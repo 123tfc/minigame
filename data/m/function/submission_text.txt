@@ -5,10 +5,10 @@
 Knockblock
 
 ##Map description
-Description here (200 character max)  
+KnockBlock is a fast-paced knockout minigame where players battle to knock each other into the void. Featuring unique maps, special drops, and percentage-based knockback mechanics. 
 
 ##What do you love the most about your submission?
-Notes here (200 character max)
+I love that KnockBlock combines strong technical coding with polished map designs. Each arena feels unique and the game rewards both skill and smart item usage, while being able to handle 2+ players (No actual limit). 
 
 ##Link to album of screenshots, video trailer, or walkthrough for complex/long maps  
 Map assets here (one is required)  

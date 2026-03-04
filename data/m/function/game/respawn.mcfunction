@@ -50,13 +50,13 @@ execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncool
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run clear @s blaze_rod
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run clear @s knowledge_book
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run give @s arrow 5
-execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run attribute @s minecraft:scale base set 1
+execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run function m:game/drops/pink/remove_shrink_spell
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run scoreboard players set @s player_hurt_level 0
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run scoreboard players set #division10 player_hurt_level 10
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run scoreboard players set @s hit_uuid 0
 execute as @a[tag=!victory,tag=alive,gamemode=spectator] if score @s respawncooldown matches 100 run effect give @a minecraft:instant_health 1 10 true
 execute as @a[tag=alive,gamemode=spectator] if score @s respawncooldown matches 101 if score @e[tag=dummy,limit=1] MapSwitch matches 1 run function m:game/macros/respawntp_macro {x1:"-272",x2:"-134",dx:"138",z1:"-859",z2:"-721",dz:"138",y:"104",dy:"10"}
-execute as @a[tag=alive,gamemode=spectator] if score @s respawncooldown matches 101 if score @e[tag=dummy,limit=1] MapSwitch matches 2 run function m:game/macros/respawntp_macro {x1:"874",x2:"1002",dx:"125",z1:"-856",z2:"-744",dz:"116",y:"102",dy:"4"}
+execute as @a[tag=alive,gamemode=spectator] if score @s respawncooldown matches 101 if score @e[tag=dummy,limit=1] MapSwitch matches 2 run function m:game/macros/respawntp_macro {x1:"910",x2:"965",dx:"55",z1:"-815",z2:"-765",dz:"50",y:"102",dy:"4"}
 execute as @a[tag=alive,gamemode=spectator] if score @s respawncooldown matches 101 if score @e[tag=dummy,limit=1] MapSwitch matches 3 run function m:game/macros/respawntp_macro {x1:"4347",x2:"4441",dx:"94",z1:"-814",z2:"-721",dz:"93",y:"99",dy:"10"}
 execute as @a[tag=!victory,tag=alive,gamemode=adventure] if score @s respawncooldown matches 101 run scoreboard players reset @s respawncooldown
 execute as @a[tag=victory,tag=alive,gamemode=adventure] if score @s respawncooldown matches 2 run scoreboard players reset @s respawncooldown

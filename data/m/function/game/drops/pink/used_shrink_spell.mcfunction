@@ -4,6 +4,15 @@ execute at @s run playsound minecraft:entity.evoker.prepare_wololo master @a ~ ~
 execute at @s run playsound minecraft:entity.evoker.prepare_wololo master @a ~ ~ ~ 1 1.7
 execute at @s run playsound minecraft:entity.evoker.prepare_wololo master @a ~ ~ ~ 1 1.4
 advancement revoke @s only m:powerups/shrink_spell
-attribute @s minecraft:scale base set 0.75
+
+execute if entity @s[tag=shrink_2,tag=!shrink_3] run attribute @s minecraft:scale modifier add m:shrink_3 -0.1 add_multiplied_total
+execute if entity @s[tag=shrink_2,tag=!shrink_3] run tag @s add shrink_3
+
+execute if entity @s[tag=shrink_1,tag=!shrink_2] run attribute @s minecraft:scale modifier add m:shrink_2 -0.1 add_multiplied_total
+execute if entity @s[tag=shrink_1,tag=!shrink_2] run tag @s add shrink_2
+
+execute if entity @s[tag=!shrink_1] run attribute @s minecraft:scale modifier add m:shrink_1 -0.2 add_multiplied_total
+execute if entity @s[tag=!shrink_1] run tag @s add shrink_1
+
 execute if entity @s[nbt={equipment:{offhand:{id: "minecraft:guster_banner_pattern", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}}] unless entity @s[nbt={SelectedItem:{id:"minecraft:guster_banner_pattern",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:guster_banner_pattern",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.mainhand with air

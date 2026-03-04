@@ -26,7 +26,7 @@
       "label": [{"color":"white","atlas":"items","sprite":"item/glow_ink_sac"},{"text":" Global Glow Up "},{"color":"white","atlas":"items","sprite":"item/glow_ink_sac"}],
       "action":{
         "type": "show_dialog",
-        "dialog": "m:blue/motion_sickness"
+        "dialog": "m:blue/global_glow_up"
       }
     },
     {

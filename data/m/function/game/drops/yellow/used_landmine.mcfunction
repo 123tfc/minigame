@@ -12,8 +12,8 @@ execute unless entity @s[tag=valid] run playsound minecraft:block.note_block.did
 #If valid position:
 execute as @s[tag=valid] at @s run playsound minecraft:item.mace.smash_air master @a ~ ~ ~ 0.2 0.8
 execute as @s[tag=valid] at @s run playsound minecraft:block.gravel.hit master @a ~ ~ ~ 0.2 0.8
-execute as @s[tag=valid] at @s align xz run summon block_display ~ ~-0.4 ~ {Tags:[landmine],block_state:{Name:"minecraft:closed_eyeblossom"}}
-execute as @s[tag=valid] at @s align xz run summon block_display ~ ~-0.4 ~ {Tags:[landmine],block_state:{Name:"minecraft:closed_eyeblossom"}}
+execute as @s[tag=valid] at @s align xz run summon block_display ~ ~-0.4 ~ {Tags:[landmine],block_state:{Name:"minecraft:closed_eyeblossom"},brightness:{sky:15,block:0}}
+
 
 
 

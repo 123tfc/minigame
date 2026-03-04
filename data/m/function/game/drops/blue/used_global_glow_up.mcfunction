@@ -23,6 +23,7 @@ execute if entity @s[team=lone] run tag @a add glowup
 execute if entity @s[team=lone] run tag @s remove glowup
 execute as @a[tag=!glowup] run effect give @s night_vision 30 0 true
 execute as @a[tag=glowup] run effect give @s glowing 30 0 true
+stopwatch create global_glow_up
 
 execute if entity @s[nbt={equipment:{offhand:{id: "minecraft:glow_ink_sac", components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}}] unless entity @s[nbt={SelectedItem:{id:"minecraft:glow_ink_sac",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.offhand with air
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:glow_ink_sac",components:{"minecraft:food":{nutrition:0,saturation:0.0f}}}}] run item replace entity @s weapon.mainhand with air

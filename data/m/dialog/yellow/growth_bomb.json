@@ -15,7 +15,7 @@
     },
     {
       "type": "minecraft:plain_message",
-      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Growth Bomb will throw it. Whenever the grenade hits something it will make all nearby players grow by 1.5 times their orignal Size.\n\n This effect lasts for 10 seconds and then the effected will return to their old size."}]
+      "contents": [{"color":"yellow","text":"Right-Clicking "},{"color":"white","text": "with the Growth Bomb will throw it. Whenever the grenade hits something it will make all nearby players' sizes grow.\n\n This effect stacks for up to 3 times and lasts for 10 seconds and then the effected will return to their old size."}]
     }
   ],
   "action": {

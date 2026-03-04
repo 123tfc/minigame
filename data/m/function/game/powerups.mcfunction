@@ -21,3 +21,6 @@ function m:game/drops/blue/gravitation_switch
 function m:game/drops/blue/slow_time
 function m:game/drops/blue/clone_decoy
 function m:game/drops/blue/pop_up_wall_id
+
+execute if stopwatch minecraft:global_glow_up 30.. run tag @a[tag=glowup] remove glowup
+execute if stopwatch minecraft:global_glow_up 30.. run stopwatch remove minecraft:global_glow_up

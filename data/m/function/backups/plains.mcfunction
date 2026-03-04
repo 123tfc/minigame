@@ -24,4 +24,4 @@ place template m:maps/plains/plains_16 -263 92 -758
 place template m:maps/plains/plains_17 -215 92 -758
 place template m:maps/plains/plains_18 -167 92 -758
 
-place template m:maps/plains/plains_19 -204 141 -793
+place template m:maps/plains/plains_19 -204 140 -793
